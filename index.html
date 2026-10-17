@@ -926,6 +926,145 @@ pre,code,.eq,.math{overflow-wrap:anywhere}
 .ev-arc .ev-num{position:absolute;inset-inline:0;bottom:0;text-align:center;font-family:var(--display);font-weight:800;font-size:2.3em;line-height:1}
 .ev-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .ev-row .bar{flex:1;min-width:90px}
+.ladder{display:flex;gap:4px;margin-top:10px}.rung{flex:1;text-align:center;font-size:10.5px;padding:7px 2px;border-radius:9px;background:var(--soft);color:var(--muted);font-weight:600;transition:all .15s}.rung.on{background:var(--acc);color:#fff;font-weight:700}.rung.done{background:color-mix(in srgb,var(--acc) 18%,transparent);color:var(--acc)}
+
+/* ===== تصميم شاشة اليوم الجديد ===== */
+.today-page { gap: 14px; }
+.today-date { font-size: .85em; color: var(--muted); margin: 0; }
+.today-goal-pill {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--soft); border-radius: 20px; padding: 6px 14px;
+  font-size: .85em; color: var(--ink); font-weight: 600;
+}
+.tgp-pct { color: var(--acc); font-weight: 700; }
+
+/* زر المسألة التالية */
+.btn-next-problem {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--acc); color: #fff;
+  border: none; border-radius: 16px; padding: 18px 20px;
+  cursor: pointer; width: 100%; text-align: right;
+  box-shadow: 0 4px 16px rgba(75,70,224,.25);
+  transition: transform .12s, box-shadow .12s;
+}
+.btn-next-problem:active { transform: scale(.98); }
+.btn-next-problem.done { background: var(--ok); cursor: default; }
+.bnp-label { font-size: 1.1em; font-weight: 700; flex: 1; }
+.bnp-sub { font-size: .82em; opacity: .85; white-space: nowrap; }
+.bnp-arr { opacity: .7; transform: scaleX(-1); flex-shrink: 0; }
+
+/* شريط الأسبوع */
+.week-strip {
+  display: flex; gap: 4px; justify-content: space-between;
+  background: var(--card); border-radius: 14px; padding: 10px 8px;
+  border: 1px solid var(--brd);
+}
+.wday {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  flex: 1; padding: 6px 2px; border-radius: 10px;
+  transition: background .15s;
+}
+.wday-today { background: var(--acc); color: #fff !important; }
+.wday-done { background: var(--acc-soft, var(--soft)); }
+.wday-name { font-size: .65em; color: var(--muted); font-weight: 600; }
+.wday-today .wday-name { color: rgba(255,255,255,.8); }
+.wday-num { font-size: .85em; font-weight: 700; }
+.wday-today .wday-num { color: #fff; }
+.wday-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--acc); margin-top: 2px;
+}
+.wday-today .wday-dot { background: rgba(255,255,255,.7); }
+.wday-done .wday-dot { background: var(--acc); }
+
+/* قائمة دروس الأسبوع */
+.today-lessons-sec { display: flex; flex-direction: column; gap: 6px; }
+.today-sec-title { font-size: .9em; color: var(--muted); font-weight: 600; margin: 0 0 4px; }
+.today-lesson-row {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--card); border: 1px solid var(--brd);
+  border-radius: 12px; padding: 10px 14px; cursor: pointer;
+  transition: background .12s; text-align: right; width: 100%;
+}
+.today-lesson-row:hover { background: var(--soft); }
+.tl-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--acc); flex-shrink: 0; }
+.tl-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.tl-info b { font-size: .9em; }
+.tl-sub { font-size: .75em; color: var(--muted); }
+.tl-arr { color: var(--muted); transform: scaleX(-1); flex-shrink: 0; }
+
+/* ومضة مضغوطة في شاشة اليوم */
+.today-glimpse { padding: 12px 14px; border-radius: 14px; }
+.today-glimpse .q { font-size: .95em; }
+
+/* صف الأزرار السريعة */
+.today-quick-row {
+  display: flex; gap: 8px; justify-content: space-between;
+}
+.tqr-btn {
+  flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px;
+  background: var(--card); border: 1px solid var(--brd);
+  border-radius: 14px; padding: 12px 8px; cursor: pointer;
+  font-size: .78em; font-weight: 600; color: var(--ink);
+  transition: background .12s;
+}
+.tqr-btn:hover { background: var(--soft); }
+
+/* ===== تصميم شاشة آنا ===== */
+.me-page { gap: 14px; }
+.me-hero {
+  display: flex; align-items: center; gap: 14px;
+  background: var(--card); border-radius: 16px; padding: 16px;
+  border: 1px solid var(--brd);
+}
+.me-hero-info { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.me-name { font-size: 1.1em; font-weight: 700; }
+.me-circle-svg { flex-shrink: 0; }
+
+.me-stats-row {
+  display: flex; gap: 8px; justify-content: space-between;
+  background: var(--card); border-radius: 14px; padding: 12px;
+  border: 1px solid var(--brd);
+}
+.me-stat { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.me-stat b { font-size: 1.1em; font-weight: 700; color: var(--acc); }
+.me-stat span { font-size: .72em; color: var(--muted); }
+
+.me-sections { display: flex; flex-direction: column; gap: 0; background: var(--card); border-radius: 16px; border: 1px solid var(--brd); overflow: hidden; }
+.me-section-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px; cursor: pointer; border: none; background: transparent;
+  border-bottom: 1px solid var(--brd); transition: background .12s; width: 100%;
+  text-align: right;
+}
+.me-section-row:last-child { border-bottom: none; }
+.me-section-row:hover { background: var(--soft); }
+.msr-ico { color: var(--acc); flex-shrink: 0; width: 28px; text-align: center; }
+.msr-info { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.msr-info b { font-size: .9em; font-weight: 600; }
+.msr-arr { color: var(--muted); transform: scaleX(-1); flex-shrink: 0; }
+
+.me-card { background: var(--card); border-radius: 14px; padding: 14px; border: 1px solid var(--brd); }
+.me-card h3 { font-size: .9em; margin: 0 0 10px; color: var(--muted); }
+.theme-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.theme-pill {
+  padding: 7px 16px; border-radius: 20px; border: 1.5px solid var(--brd);
+  background: var(--bg); cursor: pointer; font-size: .85em; font-weight: 600;
+  color: var(--ink); transition: all .12s;
+}
+.theme-pill.active { background: var(--acc); color: #fff; border-color: var(--acc); }
+
+/* ===== شاشة دروسي — بطاقات المواد الملوّنة ===== */
+.subj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.subj-card {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  background: var(--card); border: 1px solid var(--brd);
+  border-radius: 16px; padding: 16px 12px; cursor: pointer;
+  transition: box-shadow .12s, transform .12s; text-align: center;
+}
+.subj-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); transform: translateY(-2px); }
+
+/* أيقونة كتاب لتبويب دروسي */
 </style>
 </head>
 <body>
@@ -947,6 +1086,7 @@ pre,code,.eq,.math{overflow-wrap:anywhere}
 <script src="content/figs-bio2.js"></script>
 <script src="content/figs-phy2.js"></script>
 <script src="content/figs-phy2-full.js"></script>
+<script src="content/figs-fix.js"></script>
 <script src="content/mathviz.js"></script>
 <script src="content/physics-12-c1.js"></script>
 <script src="content/physics-12-c1-more.js"></script>
@@ -1152,7 +1292,8 @@ const I = {
   star: '<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/>',
   pen: '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/>',
   timer: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2h6"/>',
-  shield: '<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/>'
+  shield: '<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/>',
+  person: '<circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>'
 };
 const ico = (n, sw) => '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="' + (sw || 1.7) + '" stroke-linecap="round" stroke-linejoin="round">' + I[n] + '</svg>';
 
@@ -1302,8 +1443,8 @@ function toast(msg) {
   el.textContent = msg; el.hidden = false;
   clearTimeout(toastTimer); toastTimer = setTimeout(() => { el.hidden = true; }, 3200);
 }
-const TABS = [['today', 'الخطة', 'sun'], ['path', 'مساري', 'path'], ['review', 'المراجعة', 'review'], ['tests', 'الاختبارات', 'tests'], ['library', 'المكتبة', 'library'], ['groups', 'مجموعتي', 'group']];
-const TAB_OF = { today: 'today', path: 'path', grade: 'path', intro: 'path', subject: 'path', chapter: 'path', review: 'review', tests: 'tests', library: 'library', groups: 'groups', topic: 'path', problem: 'path', notebook: 'path', quiz: 'path', export: 'path', exam: 'tests', bank: 'library', minrec: 'tests', minprep: 'tests', subexams: 'tests', fig: 'path' };
+const TABS = [['today', 'اليوم', 'sun'], ['path', 'دروسي', 'book'], ['tests', 'الاختبارات', 'tests'], ['me', 'آنا', 'person']];
+const TAB_OF = { today: 'today', path: 'path', grade: 'path', intro: 'path', subject: 'path', chapter: 'path', review: 'path', tests: 'tests', library: 'tests', groups: 'me', topic: 'path', problem: 'path', notebook: 'path', quiz: 'path', export: 'me', exam: 'tests', bank: 'tests', minrec: 'tests', minprep: 'tests', subexams: 'tests', fig: 'path', me: 'me', settings: 'me', search: 'today' };
 
 function topBar(title, opts) {
   opts = opts || {};
@@ -1346,29 +1487,59 @@ function vToday() {
   const gl = GLIMPSES[((dayIdx % GLIMPSES.length) + GLIMPSES.length) % GLIMPSES.length];
   const rest = st.rest.includes(t.getDay()) || inHoliday(t, st.holidays);
   const used = Math.round(todayProblemSec() / 60), goal = st.probMinutes || 60, pct = Math.min(100, Math.round(used / goal * 100));
-  const wg = weeklyGoal();
   const todayLog = (st.log || []).filter(x => x.d === isoD(t));
   const todayProbs = todayLog.filter(x => x.type === 'problem').length;
   const todayReviews = todayLog.filter(x => x.type === 'review').length;
-  const todayStudy = todayLog.filter(x => x.type === 'study').reduce((a, x) => a + x.sec, 0);
-
-  /* ── تبويب «الخطة»: خياران منسدلان فقط — اليومية والأسبوعية ──
-     أهداف اليوم وكل ما يخصّه اختزل داخل القائمة الأولى، فلا يبقى شيء مفتوحًا أمام الطالب */
   const planNow = planToday();
-  const dailySummary = planNow.total
-    ? ar(planNow.picks.length) + ' مواضيع اليوم | ' + ar(planNow.reviews.length) + ' مراجعة | ' + ar(pct) + '٪ من هدفك'
-    : 'لا محتوى متبقٍ';
-  const wk = weeklyGoals(st), wkFill = weekFill(st);
-  const weekSummary = wk.left ? ar(wk.perWeek) + ' موضوعًا | ' + ar(wkFill.days.length) + ' أيام' : 'مكتمل';
 
-  return topBar('أهلاً، ' + st.name, { log: 'today', avatar: st.id }) + '<main class="page">' +
-    '<p class="muted num">' + DAYS[t.getDay()] + ' ' + fmtD(t) + '، الأسبوع ' + ar(ti.weekNo) + ' من ' + ar(ti.totalWeeks) + '</p>' +
-    '<section class="glimpse" aria-label="ومضة اليوم"><span class="lbl">ومضة اليوم</span><p class="q">' + gl[0] + '</p><p>' + gl[1] + '</p></section>' +
-    '<button class="btn" data-act="openPlanPopup" data-plan="daily"><b>الخطة اليومية</b><span class="small muted">' + dailySummary + '</span></button>' +
-    '<button class="btn" data-act="openPlanPopup" data-plan="week"><b>خطة الأسبوع</b><span class="small muted">' + weekSummary + '</span></button>' +
-    '<div class="grid2"><button class="btn" data-act="go" data-v="review" data-popup="1" data-popup-title="سجلّي والتقييم"><b>سجلّي والتقييم</b><span class="small muted">تقويم أيامك وإحصاء كل يوم على حدة</span></button>' +
-      '<button class="btn quiet" data-act="openExport" data-lvl="grade">صدّر ملخص اليوم</button></div>' +
-    '<button class="btn" data-act="evalMe"><b>🎯 قيّمني</b><span class="small muted">معدّلك المتوقّع، وهدفك، وخطة الأيام المتبقية ونصائحك ومواضيع تركيزك</span></button>' +
+  /* شريط الأسبوع: 7 أيام، اليوم مميّز */
+  const weekDayNames = ['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
+  const todayIdx = t.getDay();
+  const weekStrip = '<div class="week-strip">' + Array.from({length:7}, (_, i) => {
+    const d = new Date(t.getTime() - (todayIdx - i) * 864e5);
+    const iso = isoD(d);
+    const hasAct = (st.log || []).some(x => x.d === iso);
+    const isToday = i === todayIdx;
+    const dayN = d.getDate();
+    return '<div class="wday' + (isToday ? ' wday-today' : '') + (hasAct && !isToday ? ' wday-done' : '') + '"><span class="wday-name">' + weekDayNames[d.getDay()].slice(0,2) + '</span><span class="wday-num">' + ar(dayN) + '</span>' + (hasAct ? '<span class="wday-dot"></span>' : '<span class="wday-dot" style="opacity:0"></span>') + '</div>';
+  }).join('') + '</div>';
+
+  /* المسألة التالية: أول مادة لها مسائل */
+  let nextProbSubj = '', nextProbId = '';
+  subjectsOf(st.grade, st.branch).some(s => {
+    const c = contentOf(st.grade, s); if (!c) return false;
+    const all = allProblems(c);
+    const pend = all.find(x => { const v = solveOf(x.p.id); return !v || v.self !== 'ok'; });
+    if (pend) { nextProbSubj = s; nextProbId = pend.p.id; return true; }
+    return false;
+  });
+
+  /* قائمة دروس هذا الأسبوع */
+  const picks = planNow.picks || [];
+  const weekLessons = picks.slice(0, 5).map(x =>
+    '<button class="today-lesson-row" data-act="topic" data-id="' + x.t.id + '">' +
+    '<span class="tl-dot"></span>' +
+    '<span class="tl-info"><b>' + esc(x.t.title) + '</b><span class="tl-sub">' + esc(x.subject) + '</span></span>' +
+    '<span class="tl-arr">' + ico('back', 1.2) + '</span></button>'
+  ).join('');
+
+  return topBar('أهلاً، ' + st.name, { avatar: st.id }) +
+    '<main class="page today-page">' +
+    '<p class="today-date">' + DAYS[t.getDay()] + '، ' + fmtD(t) + ' · الأسبوع ' + ar(ti.weekNo) + '</p>' +
+    '<div class="today-goal-pill"><span>' + ar(used) + ' من ' + ar(goal) + ' دقيقة اليوم</span><span class="tgp-pct">' + ar(pct) + '٪</span></div>' +
+    (nextProbId
+      ? '<button class="btn-next-problem" data-act="prob" data-id="' + nextProbId + '"><span class="bnp-label">المسألة التالية</span><span class="bnp-sub">' + esc(nextProbSubj) + '</span><span class="bnp-arr">' + ico('back', 1.6) + '</span></button>'
+      : '<div class="btn-next-problem done"><span class="bnp-label">✓ أنجزت كل المسائل</span><span class="bnp-sub">ممتاز — استمر</span></div>') +
+    weekStrip +
+    (picks.length
+      ? '<section class="today-lessons-sec"><h3 class="today-sec-title">هذا الأسبوع</h3>' + weekLessons + '</section>'
+      : '') +
+    '<section class="glimpse today-glimpse" aria-label="ومضة اليوم"><span class="lbl">ومضة اليوم</span><p class="q">' + gl[0] + '</p><p class="muted small">' + gl[1] + '</p></section>' +
+    '<div class="today-quick-row">' +
+    '<button class="tqr-btn" data-act="openPlanPopup" data-plan="daily"><span>' + ico('sun', 1.4) + '</span><span>الخطة اليومية</span></button>' +
+    '<button class="tqr-btn" data-act="openPlanPopup" data-plan="week"><span>' + ico('path', 1.4) + '</span><span>خطة الأسبوع</span></button>' +
+    '<button class="tqr-btn" data-act="evalMe"><span>' + ico('star', 1.4) + '</span><span>قيّمني</span></button>' +
+    '</div>' +
     '</main>';
 }
 /* القسم التفاعلي بعد ومضة اليوم: ملخص اليوم + الأهداف في شاشة واحدة */
@@ -1598,7 +1769,7 @@ function vPath() {
       (hasContent && topicsTotal > 0 ? '<span class="pbar" style="margin-top:6px"><i style="width:' + pct + '%"></i></span>' : '') +
       '</span></button>';
   }).join('');
-  return topBar('مساري', { log: 'path' }) + '<main class="page">' +
+  return topBar('دروسي', {}) + '<main class="page">' +
     '<section class="grade-hero"><span class="small" style="opacity:.8">صفك هذه السنة</span><h2>' + esc(g.name) + (st.branch ? ' | ' + (st.branch === 'sci' ? 'العلمي' : 'الأدبي') : '') + '</h2>' +
       '<div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between"><p style="opacity:.85">ماذا ستدرس هذه السنة، وكيف، وبماذا ستخرج منها.</p>' +
       '<button class="btn" data-act="intro" data-g="' + st.grade + '" style="background:var(--star);color:#15202B">افتح مقدمة الصف</button></div></section>' +
@@ -6013,22 +6184,55 @@ function avgSpark(hist) {
   return '<svg viewBox="0 0 ' + W + ' ' + H + '" style="width:100%;height:46px;margin-top:8px" aria-hidden="true"><path d="' + path + '" fill="none" stroke="var(--acc)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 }
 function avgRaceHTML(R) {
-  const t = R.tier, nextTxt = t.next ? ('إلى مرتبة «' + t.next[1] + '» تحتاج +' + ar(t.next[0] - R.cur) + '٪') : 'بلغتَ أعلى مرتبة — حافظ عليها';
+  const t = R.tier;
+  const nextTxt = t.next ? ('إلى «' + t.next[1] + '» تحتاج +' + ar(t.next[0] - R.cur) + '٪') : 'بلغتَ أعلى مرتبة — حافظ عليها';
   const col = R.weekDelta > 0 ? 'var(--ok)' : R.weekDelta < 0 ? 'var(--bad)' : 'var(--muted)';
   const arrow = R.weekDelta > 0 ? '▲' : R.weekDelta < 0 ? '▼' : '■';
-  return '<section class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap"><h3 style="margin:0">سباق معدّلك</h3>' +
-    (R.newRecord ? '<span class="sc-tag gold">رقم قياسي جديد!</span>' : '') + '</div>' +
-    '<p class="small muted">تنافس نفسك: ارفع معدّلك المتوقّع واكسر رقمك القياسي — المنافسة في المعدّل نفسه لا في نقاط.</p>' +
-    '<div class="ev-tiles" style="margin-top:8px">' +
-      '<div class="tile"><b class="num">' + ar(R.cur) + '٪</b><span>معدّلك الآن</span></div>' +
-      '<div class="tile"><b class="num">' + ar(R.best) + '٪</b><span>رقمك القياسي</span></div>' +
-      '<div class="tile"><b class="num" style="color:' + col + '">' + arrow + ' ' + ar(Math.abs(R.weekDelta)) + '٪</b><span>تغيّرك هذا الأسبوع</span></div>' +
-      '<div class="tile"><b class="num">' + t.cur[1] + '</b><span>مرتبتك الآن</span></div>' +
+  const ladderHTML = AVG_TIERS.map(([v, lbl]) => {
+    const passed = R.cur > v && t.cur[0] !== v;
+    const active = t.cur[0] === v;
+    return '<span class="rung' + (active ? ' on' : passed ? ' done' : '') + '">' + lbl + '</span>';
+  }).join('');
+  return '<section class="card">' +
+    '<div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap">' +
+      '<h3 style="margin:0">سباق معدّلك</h3>' +
+      (R.newRecord ? '<span class="sc-tag gold">رقم قياسي جديد!</span>' : '') +
     '</div>' +
+    '<p class="small muted">تنافس نفسك: ارفع معدّلك المتوقّع واكسر رقمك القياسي.</p>' +
+    '<div class="ev-tiles" style="margin-top:8px">' +
+      '<div class="tile"><b class="num">' + ar(R.best) + '٪</b><span>رقمك القياسي</span></div>' +
+      '<div class="tile"><b class="num" id="avgCurEl">' + ar(R.cur) + '٪</b><span>معدّلك الآن</span></div>' +
+      '<div class="tile"><b class="num" id="avgTierEl">' + t.cur[1] + '</b><span>مرتبتك الآن</span></div>' +
+      '<div class="tile"><b class="num" style="color:' + col + '">' + arrow + ' ' + ar(Math.abs(R.weekDelta)) + '٪</b><span>تغيّرك هذا الأسبوع</span></div>' +
+    '</div>' +
+    '<div class="ladder" id="avgLadder">' + ladderHTML + '</div>' +
     '<div class="srows" style="margin-top:10px">' +
       pctBar('المسافة إلى هدفك ' + ar(R.goal) + '٪', Math.min(100, R.cur / Math.max(1, R.goal) * 100), R.cur >= R.goal ? 'good' : 'gold') +
     '</div>' +
-    '<p class="small muted">' + nextTxt + '</p>' + avgSpark(R.hist) + '</section>';
+    '<div style="margin-top:10px">' +
+      '<label class="small muted" style="display:flex;justify-content:space-between;margin-bottom:4px">' +
+        '<span>جرّب: معدّلك المتوقّع</span><b id="avgSliderVal">' + ar(R.cur) + '٪</b>' +
+      '</label>' +
+      '<input type="range" min="0" max="100" value="' + R.cur + '" id="avgRaceSlider" style="width:100%;accent-color:var(--acc)" oninput="avgRaceSim(+this.value)">' +
+    '</div>' +
+    '<p class="small muted">' + nextTxt + '</p>' +
+    avgSpark(R.hist) + '</section>';
+}
+function avgRaceSim(v) {
+  const R2 = avgRace(me(), v);
+  const t2 = R2.tier;
+  const curEl = document.getElementById('avgCurEl');
+  const tierEl = document.getElementById('avgTierEl');
+  const sliderVal = document.getElementById('avgSliderVal');
+  const ladderEl = document.getElementById('avgLadder');
+  if (curEl) curEl.textContent = ar(v) + '٪';
+  if (sliderVal) sliderVal.textContent = ar(v) + '٪';
+  if (tierEl) tierEl.textContent = t2.cur[1];
+  if (ladderEl) ladderEl.innerHTML = AVG_TIERS.map(([vt, lbl]) => {
+    const passed = v > vt && t2.cur[0] !== vt;
+    const active = t2.cur[0] === vt;
+    return '<span class="rung' + (active ? ' on' : passed ? ' done' : '') + '">' + lbl + '</span>';
+  }).join('');
 }
 function vEval() {
   const D = evalStats();
@@ -6084,8 +6288,71 @@ function vEval() {
   return '<div class="page">' + h + '</div>';
 }
 
+/* شاشة «آنا»: بطاقة الطالب + الإحصاء + القسمات */
+function vMe() {
+  const st = me();
+  const ok = solvedTotal(), s = streakDays(), avg = myMinisterialAvg(), ach = achievements();
+  /* دائرة التقدم الكلي */
+  const subs = subjectsOf(st.grade, st.branch);
+  let topicsDone = 0, topicsTotal = 0;
+  subs.forEach(sub => {
+    const c = contentOf(st.grade, sub); if (!c) return;
+    c.chapters.forEach(ch => ch.topics.forEach(t => { if (isHidden(t.id)) return; topicsTotal++; if (topicPct(t) >= 90) topicsDone++; }));
+  });
+  const covPct = topicsTotal ? Math.round(topicsDone / topicsTotal * 100) : 0;
+  const R = 40, circ = (2 * Math.PI * R).toFixed(1), off = (circ * (1 - covPct / 100)).toFixed(1);
+  const circle = '<svg class="me-circle-svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="' + R + '" fill="none" stroke="var(--soft)" stroke-width="8"/>' +
+    '<circle cx="50" cy="50" r="' + R + '" fill="none" stroke="var(--acc)" stroke-width="8" stroke-dasharray="' + circ + '" stroke-dashoffset="' + off + '" stroke-linecap="round" transform="rotate(-90 50 50)"/>' +
+    '<text x="50" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="var(--ink)">' + ar(covPct) + '٪</text>' +
+    '<text x="50" y="62" text-anchor="middle" font-size="9" fill="var(--muted)">تغطية</text></svg>';
+
+  /* صف الإحصاء */
+  const statsRow = '<div class="me-stats-row">' +
+    '<div class="me-stat"><b class="num">' + ar(ok) + '</b><span>مسألة</span></div>' +
+    '<div class="me-stat"><b class="num">' + ar(s) + '</b><span>يوم متتالي</span></div>' +
+    '<div class="me-stat"><b class="num">' + (avg != null ? ar(avg) + '٪' : '—') + '</b><span>وزاري</span></div>' +
+    '<div class="me-stat"><b class="num">' + ar(ach.earned) + '/' + ar(ach.total) + '</b><span>إنجاز</span></div>' +
+    '</div>';
+
+  /* قسمات «آنا» */
+  const sections = [
+    { ico: 'star', label: 'تقدمي', sub: ar(covPct) + '٪ من المنهج', act: 'go', v: 'review' },
+    { ico: 'review', label: 'سجلي والتقويم', sub: 'نشاطك اليومي والأسبوعي', act: 'go', v: 'review', popup: '1', popupTitle: 'سجلّي والتقييم' },
+    { ico: 'tests', label: 'تطوري الوزاري', sub: 'نتائجك وتتبّع معدلك', act: 'minRec' },
+    { ico: 'book', label: 'مكتبي', sub: 'دفاتر وملاحظاتي', act: 'go', v: 'notebook' },
+    { ico: 'group', label: 'المراجعة المتباعدة', sub: 'مواضيع تستحق مراجعة', act: 'go', v: 'review', popup: '1', popupTitle: 'المراجعة المتباعدة' },
+    { ico: 'gear', label: 'الإعدادات والتصدير', sub: 'حسابك وخياراتك والنسخ الاحتياطي', act: 'go', v: 'settings' },
+  ];
+  const sectHTML = sections.map(s =>
+    '<button class="me-section-row"' +
+    (s.popup ? ' data-act="go" data-v="' + s.v + '" data-popup="1" data-popup-title="' + s.popupTitle + '"' :
+     s.act === 'go' ? ' data-act="go" data-v="' + s.v + '"' : ' data-act="' + s.act + '"') +
+    '><span class="msr-ico">' + ico(s.ico, 1.3) + '</span>' +
+    '<span class="msr-info"><b>' + s.label + '</b><span class="small muted">' + s.sub + '</span></span>' +
+    '<span class="msr-arr">' + ico('back', 1.1) + '</span></button>'
+  ).join('');
+
+  /* بطاقة المظهر */
+  const themeBtn = (k, lbl) => '<button class="theme-pill' + (DB.prefs.theme === k ? ' active' : '') + '" data-act="theme" data-v="' + k + '">' + lbl + '</button>';
+  const themeRow = '<section class="me-card"><h3>المظهر</h3><div class="theme-pills">' +
+    themeBtn('default', 'حيوي') + themeBtn('calm', 'هادئ') + themeBtn('dark', 'داكن') + themeBtn('night', 'ليلي') +
+    '</div></section>';
+
+  return topBar('آنا', {}) + '<main class="page me-page">' +
+    '<div class="me-hero">' +
+      avatarHTML(st.id, 72) +
+      '<div class="me-hero-info"><span class="me-name">' + esc(st.name) + '</span>' +
+      '<span class="small muted">' + esc(GRADES[st.grade - 1].name) + (st.branch ? (st.branch === 'sci' ? ' — العلمي' : ' — الأدبي') : '') + '</span></div>' +
+      circle +
+    '</div>' +
+    statsRow +
+    '<div class="me-sections">' + sectHTML + '</div>' +
+    themeRow +
+    '</main>';
+}
+
 /* =================== الرسم =================== */
-const VIEWS = { today: vToday, path: vPath, grade: vGrade, subject: vSubject, chapter: vChapter, intro: vIntro, review: vReview, tests: vTests, library: vLibrary, groups: vGroups, search: vSearch, settings: vSettings, topic: vTopic, problem: vProblem, notebook: vNotebook, quiz: vQuiz, export: vExport, exam: vExam, bank: vBank, log: vLog, subexams: vSubExams, minprep: vMinPrep, minrec: vMinrec, fig: vFig };
+const VIEWS = { today: vToday, path: vPath, grade: vGrade, subject: vSubject, chapter: vChapter, intro: vIntro, review: vReview, tests: vTests, library: vLibrary, groups: vGroups, search: vSearch, settings: vSettings, topic: vTopic, problem: vProblem, notebook: vNotebook, quiz: vQuiz, export: vExport, exam: vExam, bank: vBank, log: vLog, subexams: vSubExams, minprep: vMinPrep, minrec: vMinrec, fig: vFig, me: vMe };
 function render(scrollTop) {
   applyPrefs();
   const app = document.getElementById('app');
@@ -6276,7 +6543,8 @@ document.addEventListener('click', e => {
         '.nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px}' +
         '.dl{background:#2f7d5b;color:#fff;text-decoration:none;padding:8px 18px;border-radius:9px;font-weight:700;font-size:14px}' +
         '.hint{background:#fff6dd;border:1px solid #e9d89a;border-radius:12px;padding:12px 14px;font-size:13px;color:#6b5d2f;margin-bottom:16px}' +
-        '.all{display:block;width:100%;margin-bottom:16px;background:#1c1a16;color:#fff;border:0;border-radius:12px;padding:14px;font-size:15px;font-weight:700;font-family:inherit;cursor:pointer}</style></head>' +
+        '.all{display:block;width:100%;margin-bottom:16px;background:#1c1a16;color:#fff;border:0;border-radius:12px;padding:14px;font-size:15px;font-weight:700;font-family:inherit;cursor:pointer}
+</style></head>' +
         '<body><div class="wrap"><h1>كل ملفات دَرب</h1><p class="sub">' + esc(st2.name) + ' · ' + esc(fmtD(now2)) + ' · ' + ar(files.length) + ' ملفًا</p>' +
         '<div class="hint">اضغط «نزّل الكل» أو نزّل كل ملف على حدة. كل ملف صفحة HTML تفتحها في المتصفح أو تطبعها PDF.</div>' +
         '<button class="all" onclick="document.querySelectorAll(\'.dl\').forEach((a,i)=>setTimeout(()=>a.click(),i*350))">نزّل الكل (' + ar(files.length) + ' ملفًا)</button>' +
