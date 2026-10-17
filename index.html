@@ -71,7 +71,7 @@ a{color:var(--acc)}
 
 /* هيكل الشاشة */
 #app{min-height:100%;display:flex;flex-direction:column}
-.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;align-items:center;gap:12px;padding:16px max(16px,4vw) 10px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;padding:16px max(16px,4vw) 10px}
 .top h1{font-family:var(--display);font-size:1.75em;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .icon-btn{width:46px;height:46px;flex-shrink:0;border-radius:12px;border:1px solid var(--line);background:var(--card);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--ink)}
 .icon-btn svg{width:22px;height:22px}
@@ -499,7 +499,7 @@ details.fold>.inner{padding-bottom:18px;display:flex;flex-direction:column;gap:1
 .card{transition:box-shadow .2s ease,border-color .2s ease}
 .card:hover{box-shadow:0 4px 20px rgba(21,32,43,.09);border-color:color-mix(in srgb,var(--acc) 30%,var(--line))}
 .seg{transition:transform .15s ease,box-shadow .15s ease}
-.seg:hover{transform:translateY(-1px);box-shadow:0 2px 8px rgba(21,32,43,.06)}
+.seg:hover:not(.on){transform:translateY(-1px);box-shadow:0 2px 8px rgba(21,32,43,.06)}
 .chip{transition:transform .15s ease,background .15s ease,color .15s ease,box-shadow .15s ease}
 .chip:hover{transform:translateY(-1px);box-shadow:0 2px 8px rgba(21,32,43,.1)}
 .btn{transition:transform .15s ease,box-shadow .15s ease,background .15s ease,filter .15s ease}
@@ -945,6 +945,8 @@ pre,code,.eq,.math{overflow-wrap:anywhere}
 <script src="content/figs-eng.js"></script>
 <script src="content/figs-islamic2.js"></script>
 <script src="content/figs-bio2.js"></script>
+<script src="content/figs-phy2.js"></script>
+<script src="content/figs-phy2-full.js"></script>
 <script src="content/mathviz.js"></script>
 <script src="content/physics-12-c1.js"></script>
 <script src="content/physics-12-c1-more.js"></script>
@@ -1191,7 +1193,8 @@ function newStudent(o) {
     holidays: (o.holidays || DEFAULT_HOLIDAYS).map(h => Object.assign({}, h)),
     examDate: o.examDate || null, goal: o.goal || null, college: o.college || '',
     probMinutes: o.probMinutes || 60, solves: {},
-    created: new Date().toISOString(), progress: {}, log: [], exams: [], groups: []
+    created: new Date().toISOString(), progress: {}, log: [], exams: [], groups: [],
+    seenUpdate: null
   };
 }
 
@@ -1242,6 +1245,7 @@ function go(view, opts) {
   Object.assign(S, { view }, opts || {});
   try { history.pushState({ d: S.stack.length }, ''); } catch (e) {}
   render(true);
+  maybeShowUpdate();
 }
 function back() {
   if (S.exam && S.exam.kind === 'ministerial' && (S.exam.phase === 'run' || S.exam.phase === 'pledge')) { toast('أنهِ الامتحان أولًا.'); return true; }
@@ -5820,6 +5824,23 @@ function vPopup() {
     '<div class="modal-b">' + body + '</div></div></div>';
 }
 
+
+const UPDATE_TAG = 'v64-figs';
+const UPDATE_NOTES = [
+  'رسوم تفاعلية حيّة: الأعداد المركّبة، القطوع المخروطية، المماس، المتسعة، دائرة RC، التداخل الموجي — غيّر القيم ليتحرّك الرسم.',
+  'التربية الإسلامية: ١٥ رسمًا شارحًا جديدًا موزّعة على الوحدات.',
+  'الأحياء — فصل الأنسجة: رسوم جديدة أوضح وباتجاه يتبع المحتوى.',
+  'إصلاحات في ظهور الرسوم داخل الدروس.'
+];
+function maybeShowUpdate() {
+  const st = me(); if (!st) return;
+  if (st.seenUpdate === UPDATE_TAG) return;
+  st.seenUpdate = UPDATE_TAG; save();
+  const body = '<ul style="padding-right:1.4em;line-height:1.9">' +
+    UPDATE_NOTES.map(n => '<li>' + n + '</li>').join('') + '</ul>';
+  showPopup('جديد في دَرْب 🎉', body, false);
+}
+
 /* =================== الشرح المتحرك ===================
    مشاهد مبنية تلقائيًا من محتوى الموضوع نفسه (لماذا ندرسه ← فقرات الشرح ←
    القوانين ← التعريفات ← مثال الكتاب ← خلاصة)، كل مشهد يظهر بحركة ناعمة
@@ -6159,7 +6180,7 @@ document.addEventListener('click', e => {
     case 'oGrade': S.onb.grade = +el.dataset.g; render(); break;
     case 'oBranch': S.onb.branch = el.dataset.v; render(); break;
     case 'theme': DB.prefs.theme = el.dataset.v; save(); render(); break;
-    case 'switch': DB.activeId = el.dataset.id; save(); S.stack = []; S.view = 'today'; render(true); toast('بدّلت إلى ' + me().name); break;
+    case 'switch': DB.activeId = el.dataset.id; save(); S.stack = []; S.view = 'today'; render(true); maybeShowUpdate(); toast('بدّلت إلى ' + me().name); break;
     case 'addStudent': startOnb('add'); render(); break;
     case 'delStudent': {
       const s = DB.students.find(x => x.id === el.dataset.id);
