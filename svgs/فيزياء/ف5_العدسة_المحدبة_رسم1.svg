@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-label="العدسة المحدبة الأشعة الثلاثة والصورة">
+  <!-- العدسة -->
+  <line x1="150" y1="30" x2="150" y2="170" stroke="#2f7d5b" stroke-width="4"/>
+  <line x1="146" y1="30" x2="154" y2="30" stroke="#2f7d5b" stroke-width="2"/>
+  <line x1="146" y1="170" x2="154" y2="170" stroke="#2f7d5b" stroke-width="2"/>
+  <text x="150" y="22" text-anchor="middle" font-size="12" fill="#2f7d5b" font-weight="700" font-family="system-ui, Arial, sans-serif">عدسة محدودة</text>
+  <!-- البؤرتان -->
+  <circle cx="110" cy="100" r="4" fill="#c0563f"/>
+  <circle cx="190" cy="100" r="4" fill="#c0563f"/>
+  <text x="110" y="114" text-anchor="middle" font-size="10" fill="#c0563f">F</text>
+  <text x="190" y="114" text-anchor="middle" font-size="10" fill="#c0563f">F</text>
+  <!-- الجسم (سهم إلى اليسار) -->
+  <line x1="80" y1="100" x2="80" y2="130" stroke="#c0563f" stroke-width="3" marker-end="url(#figArrow_phy)"/>
+  <text x="80" y="144" text-anchor="middle" font-size="10" fill="#555">الجسم</text>
+  <!-- الأشعة الثلاثة -->
+  <!-- شعاع متوازي ثم عبر البؤرة -->
+  <line x1="80" y1="130" x2="150" y2="130" stroke="#c0563f" stroke-width="1.8" marker-end="url(#figArrow_phy)"/>
+  <line x1="150" y1="130" x2="220" y2="70" stroke="#c0563f" stroke-width="1.8" marker-end="url(#figArrow_phy)"/>
+  <!-- شعاع عبر المركز مستقيم -->
+  <line x1="80" y1="130" x2="220" y2="70" stroke="#2f7d5b" stroke-width="1.6" stroke-dasharray="4,3"/>
+  <!-- الصورة -->
+  <line x1="220" y1="70" x2="220" y2="100" stroke="#c0563f" stroke-width="3" marker-end="url(#figArrow_phy)"/>
+  <text x="220" y="114" text-anchor="middle" font-size="10" fill="#c0563f">الصورة الحقيقية</text>
+  <text x="150" y="190" text-anchor="middle" font-size="10" fill="#555" font-family="system-ui, Arial, sans-serif">do > f → صورة حقيقية مقلوبة</text>
+</svg>

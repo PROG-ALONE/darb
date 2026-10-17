@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-label="قانون لو شاتليه إزاحة الاتزان">
+  <rect x="60" y="30" width="180" height="40" rx="6" fill="#2f7d5b"/><text x="150" y="55" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="system-ui">قانون لو شاتليه</text>
+  <text x="150" y="90" text-anchor="middle" font-size="11" fill="#555">عند تغيير الضغط أو الحرارة أو التركيز،</text>
+  <text x="150" y="105" text-anchor="middle" font-size="11" fill="#555">يتحرك الاتزان ضد التغير لإعادة التوازن.</text>
+  <rect x="60" y="120" width="180" height="50" rx="6" fill="#d7ebe0" stroke="#1a5c3a" stroke-width="2"/>
+  <text x="150" y="140" text-anchor="middle" font-size="11" fill="#1a5c3a">مثال: N₂ + 3H₂ ⇌ 2NH₃ + حرارة</text>
+  <text x="150" y="155" text-anchor="middle" font-size="10" fill="#555">زيادة الضغط → يمين (أقل مولات)</text>
+</svg>

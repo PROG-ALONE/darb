@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-label="مراحل الانقسام الخيطي أربع مراحل">
+  <rect x="30" y="30" width="52" height="40" rx="4" fill="#d7ebe0" stroke="#1a5c3a" stroke-width="2"/><text x="56" y="55" text-anchor="middle" font-size="9" fill="#1a5c3a">التكثف</text>
+  <rect x="100" y="30" width="52" height="40" rx="4" fill="#d7ebe0" stroke="#1a5c3a" stroke-width="2"/><text x="126" y="55" text-anchor="middle" font-size="9" fill="#1a5c3a">التثاؤب</text>
+  <rect x="170" y="30" width="52" height="40" rx="4" fill="#d7ebe0" stroke="#1a5c3a" stroke-width="2"/><text x="196" y="55" text-anchor="middle" font-size="9" fill="#1a5c3a">الانفصال</text>
+  <rect x="240" y="30" width="52" height="40" rx="4" fill="#d7ebe0" stroke="#1a5c3a" stroke-width="2"/><text x="266" y="55" text-anchor="middle" font-size="9" fill="#1a5c3a">التجزئة</text>
+  <line x1="82" y1="50" x2="100" y2="50" stroke="#555" stroke-width="1.6" marker-end="url(#figArrow_bio)"/>
+  <line x1="152" y1="50" x2="170" y2="50" stroke="#555" stroke-width="1.6" marker-end="url(#figArrow_bio)"/>
+  <line x1="222" y1="50" x2="240" y2="50" stroke="#555" stroke-width="1.6" marker-end="url(#figArrow_bio)"/>
+  <text x="150" y="140" text-anchor="middle" font-size="10" fill="#555">4 مراحل: تكثف → تثاؤب → انفصال → تجزئة</text>
+</svg>

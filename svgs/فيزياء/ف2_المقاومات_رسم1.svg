@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-label="المقاومات على التسلسل والتوازي في دائرة">
+  <!-- التسلسل -->
+  <rect x="20" y="40" width="120" height="24" rx="4" fill="#faf0d4" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="80" y="56" text-anchor="middle" font-size="11" fill="#8a6d1f" font-weight="700" font-family="system-ui, Arial, sans-serif">تسلسل</text>
+  <rect x="30" y="66" width="24" height="14" rx="3" fill="#d7ebe0" stroke="#1a5c3a" stroke-width="2"/>
+  <rect x="86" y="66" width="24" height="14" rx="3" fill="#d7ebe0" stroke="#1a5c3a" stroke-width="2"/>
+  <text x="42" y="76" text-anchor="middle" font-size="10" fill="#555" font-family="system-ui, Arial, sans-serif">R₁</text>
+  <text x="98" y="76" text-anchor="middle" font-size="10" fill="#555" font-family="system-ui, Arial, sans-serif">R₂</text>
+  <line x1="54" y1="73" x2="86" y2="73" stroke="#555" stroke-width="2" marker-end="url(#figArrow_phy)"/>
+  <line x1="20" y1="73" x2="30" y2="73" stroke="#555" stroke-width="2"/>
+  <text x="80" y="98" text-anchor="middle" font-size="10" fill="#555" font-family="system-ui, Arial, sans-serif">R Gesamt = R₁ + R₂</text>
+  <!-- التوازي -->
+  <rect x="180" y="40" width="100" height="24" rx="4" fill="#faf0d4" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="230" y="56" text-anchor="middle" font-size="11" fill="#8a6d1f" font-weight="700" font-family="system-ui, Arial, sans-serif">توازي</text>
+  <rect x="190" y="66" width="24" height="14" rx="3" fill="#d7ebe0" stroke="#1a5c3a" stroke-width="2"/>
+  <rect x="236" y="66" width="24" height="14" rx="3" fill="#d7ebe0" stroke="#1a5c3a" stroke-width="2"/>
+  <text x="202" y="76" text-anchor="middle" font-size="10" fill="#555" font-family="system-ui, Arial, sans-serif">R₁</text>
+  <text x="248" y="76" text-anchor="middle" font-size="10" fill="#555" font-family="system-ui, Arial, sans-serif">R₂</text>
+  <line x1="214" y1="73" x2="236" y2="73" stroke="#555" stroke-width="2"/>
+  <line x1="180" y1="73" x2="190" y2="73" stroke="#555" stroke-width="2"/>
+  <text x="230" y="98" text-anchor="middle" font-size="10" fill="#555" font-family="system-ui, Arial, sans-serif">1/R = 1/R₁ + 1/R₂</text>
+</svg>

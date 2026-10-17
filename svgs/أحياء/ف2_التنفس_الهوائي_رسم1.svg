@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-label="مراحل التنفس الهوائي الهدم كريبس سلسلة نقل الإلكترون">
+  <!-- الجلوكوز -->
+  <rect x="20" y="40" width="56" height="30" rx="5" fill="#faf0d4" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="48" y="60" text-anchor="middle" font-size="10" fill="#8a6d1f" font-family="system-ui, Arial, sans-serif">الجلوكوز C₆H₁₂O₆</text>
+  <!-- الهدم -->
+  <line x1="76" y1="55" x2="94" y2="55" stroke="#555" stroke-width="1.6" marker-end="url(#figArrow_phy)"/>
+  <rect x="100" y="40" width="52" height="30" rx="5" fill="#d7ebe0" stroke="#1a5c3a" stroke-width="2"/>
+  <text x="126" y="60" text-anchor="middle" font-size="10" fill="#1a5c3a" font-family="system-ui, Arial, sans-serif">الهدم (الغليكوليز)</text>
+  <line x1="152" y1="55" x2="170" y2="55" stroke="#555" stroke-width="1.6" marker-end="url(#figArrow_phy)"/>
+  <!-- كريبس -->
+  <rect x="176" y="40" width="50" height="30" rx="5" fill="#d7ebe0" stroke="#1a5c3a" stroke-width="2"/>
+  <text x="201" y="60" text-anchor="middle" font-size="10" fill="#1a5c3a" font-family="system-ui, Arial, sans-serif">دورة كريبس</text>
+  <line x1="226" y1="55" x2="244" y2="55" stroke="#555" stroke-width="1.6" marker-end="url(#figArrow_phy)"/>
+  <!-- سلسلة نقل الإلكترون -->
+  <rect x="250" y="40" width="50" height="30" rx="5" fill="#efe9dd" stroke="#8a3020" stroke-width="2"/>
+  <text x="275" y="60" text-anchor="middle" font-size="10" fill="#8a3020" font-family="system-ui, Arial, sans-serif">سلسلة نقل</text>
+  <text x="275" y="70" text-anchor="middle" font-size="8.5" fill="#8a3020" font-family="system-ui, Arial, sans-serif">الإلكترون</text>
+  <!-- ATP -->
+  <line x1="126" y1="70" x2="126" y2="90" stroke="#555" stroke-width="1.4" marker-end="url(#figArrow_phy)"/>
+  <line x1="201" y1="70" x2="201" y2="90" stroke="#555" stroke-width="1.4" marker-end="url(#figArrow_phy)"/>
+  <line x1="275" y1="70" x2="275" y2="90" stroke="#555" stroke-width="1.4" marker-end="url(#figArrow_phy)"/>
+  <text x="126" y="106" text-anchor="middle" font-size="10" fill="#2f7d5b">ATP</text>
+  <text x="201" y="106" text-anchor="middle" font-size="10" fill="#2f7d5b">ATP</text>
+  <text x="275" y="106" text-anchor="middle" font-size="10" fill="#2f7d5b">ATP + ماء</text>
+  <text x="150" y="140" text-anchor="middle" font-size="10" fill="#555" font-family="system-ui, Arial, sans-serif">التنفس الهوائي: الجلوكوز + أكسجين → ثاني أكسيد الكربون + ماء + طاقة</text>
+</svg>

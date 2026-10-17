@@ -476,4 +476,7 @@
     get: () => merge(baseS, SUBJ),
     set: v => { baseS = v || {}; }
   });
+  /* إلحاق تعريفات علامة السهم figArrow5 بـ FIG_DEFS وإلا ظهر رأس السهم أسود */
+  const defsNow = window.FIG_DEFS || '';
+  window.FIG_DEFS = defsNow.indexOf('figArrow5') >= 0 ? defsNow : defsNow + DEFS;
 })();

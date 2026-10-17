@@ -1,0 +1,105 @@
+{
+  "generated": "2026-10-17",
+  "total": 11,
+  "items": [
+    {
+      "key": "parabola",
+      "title": "القطع المكافئ",
+      "subj": "الرياضيات",
+      "chapter": "الفصل الثاني — القطوع المخروطية",
+      "file": "math-viz/parabola.html",
+      "params": ["a","b","c"],
+      "description": "y = ax² + bx + c مع الرأس ومحور التماثل واتجاه الفتح"
+    },
+    {
+      "key": "ellipse",
+      "title": "القطع الناقص",
+      "subj": "الرياضيات",
+      "chapter": "الفصل الثاني — القطوع المخروطية",
+      "file": "math-viz/ellipse.html",
+      "params": ["a","b","h","k"],
+      "description": "(x-h)²/a² + (y-k)²/b² = 1 مع البؤرتين ومحوري الارتكاز"
+    },
+    {
+      "key": "hyperbola",
+      "title": "القطع الزائد",
+      "subj": "الرياضيات",
+      "chapter": "الفصل الثاني — القطوع المخروطية",
+      "file": "math-viz/hyperbola.html",
+      "params": ["a","b","h","k"],
+      "description": "(x-h)²/a² − (y-k)²/b² = 1 مع الفرعين والمقاربتين والبؤرتين"
+    },
+    {
+      "key": "circle",
+      "title": "الدائرة",
+      "subj": "الرياضيات",
+      "chapter": "الفصل الثاني — القطوع المخروطية",
+      "file": "math-viz/circle.html",
+      "params": ["h","k","r"],
+      "description": "(x-h)² + (y-k)² = r² مع المركز والنصف قطر ونقطة على المحيط"
+    },
+    {
+      "key": "complex_plane",
+      "title": "المستوى المركّب",
+      "subj": "الرياضيات",
+      "chapter": "الفصل الأول — الأعداد التخيلية",
+      "file": "math-viz/complex_plane.html",
+      "params": ["a","b"],
+      "description": "z = a + bi مع المقطع والطول والزاوية والاتجاه"
+    },
+    {
+      "key": "derivative_tangent",
+      "title": "المشتق والمماس",
+      "subj": "الرياضيات",
+      "chapter": "الفصل الثالث — المشتق والتكامل",
+      "file": "math-viz/derivative_tangent.html",
+      "params": ["a₃","a₂","a₁","a₀","x₀"],
+      "description": "كثيرة حدود من الدرجة الثالثة مع خط المماس عند نقطة"
+    },
+    {
+      "key": "capacitor",
+      "title": "المتسعة",
+      "subj": "الفيزياء",
+      "chapter": "الفصل الأول — المجال الكهربائي",
+      "file": "math-viz/capacitor.html",
+      "params": ["V","d","epsilon_r","A"],
+      "description": "حساب C و Q و E مع تصور اللوحين وخطوط المجال"
+    },
+    {
+      "key": "rc_circuit",
+      "title": "دائرة RC",
+      "subj": "الفيزياء",
+      "chapter": "الفصل الثاني — التيار الكهربائي المستمر",
+      "file": "math-viz/rc_circuit.html",
+      "params": ["R","C","V₀"],
+      "description": "منحنى الشحن والتفريغ وثابت الزمن τ = RC"
+    },
+    {
+      "key": "optics_lens",
+      "title": "العدسة المحدبة",
+      "subj": "الفيزياء",
+      "chapter": "الفصل الخامس — الضوء",
+      "file": "math-viz/optics_lens.html",
+      "params": ["f","do"],
+      "description": "الأشعة الثلاثة والصورة الحقيقية والوهمية"
+    },
+    {
+      "key": "projectile",
+      "title": "الرمي المائل",
+      "subj": "الفيزياء",
+      "chapter": "الحركة المائلة",
+      "file": "math-viz/projectile.html",
+      "params": ["v₀","θ"],
+      "description": "المسار المقوّس والذروة والمدى وزمن الطيران"
+    },
+    {
+      "key": "wave_interference",
+      "title": "التداخل الموجي",
+      "subj": "الفيزياء",
+      "chapter": "الموجات",
+      "file": "math-viz/wave_interference.html",
+      "params": ["A₁","A₂","λ","φ"],
+      "description": "الموجتان والمحصلة والتداخل البنّاء والهدام"
+    }
+  ]
+}

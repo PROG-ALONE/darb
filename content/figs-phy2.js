@@ -1,0 +1,11 @@
+;(function(){
+  var DEFS = '<defs><marker id="figArrow_phy2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#555"/></marker></defs>';
+  window.FIG_DEFS = (window.FIG_DEFS||'').indexOf('figArrow_phy2')>=0 ? window.FIG_DEFS : (window.FIG_DEFS||'')+DEFS;
+  var ADD = {};
+  ADD['fig_r12u1t1'] = { title:'المتسعة ذات الصفيحتين', teaches:'لوحان متوازيان + عازل + S = ε₀εr·A/d', subj:'الفيزياء', chapter:'الفصل الأول — المتسعات', svg:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect x="75" y="40" width="12" height="120" rx="3" fill="#c0563f"/><rect x="211" y="40" width="12" height="120" rx="3" fill="#2f7d5b"/><text x="72" y="34" text-anchor="middle" font-size="14" fill="#c0563f">+</text><text x="224" y="34" text-anchor="middle" font-size="14" fill="#2f7d5b">−</text><text x="150" y="190" text-anchor="middle" font-size="10" fill="#555">C = ε₀·εr·A/d</text></svg>`, parts:[{id:'p1',label:'الصفيحتان',note:'لوحان متوازيان متساويان.'}], steps:['ارسم الصفيحتين','سمّ المسافة d','اكتب قانون السعة'] };
+  ADD['fig_r12u1t3'] = { title:'السعة', teaches:'السعة تعتمد على المساحة والمسافة وثابت العزل.', subj:'الفيزياء', chapter:'الفصل الأول — المتسعات', svg:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect x="60" y="60" width="180" height="60" rx="8" fill="#d7ebe0" stroke="#2f7d5b" stroke-width="2"/><text x="150" y="95" text-anchor="middle" font-size="14" fill="#2f7d5b" font-weight="700">C = ε₀ εr A / d</text></svg>`, parts:[{id:'p1',label:'العوامل',note:'A، d، εr.'}], steps:['حدد العوامل','اكتب القانون'] };
+  ADD['fig_r12u1t4'] = { title:'العازل الكهربائي', teaches:'العازل يزيد السعة بتثبيت εr.', subj:'الفيزياء', chapter:'الفصل الأول — المتسعات', svg:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><text x="150" y="100" text-anchor="middle" font-size="14" fill="#2f7d5b">εr &gt; 1 → C أكبر</text></svg>`, parts:[{id:'p1',label:'εr',note:'ثابت العزل النسبي.'}], steps:['قارن εr','لاحظ تأثيره على C'] };
+  window.FIGS = Object.assign({}, window.FIGS, ADD);
+  var SUBJ={}; Object.keys(ADD).forEach(function(k){ SUBJ[k]=ADD[k].subj; });
+  window.FIG_SUBJ = Object.assign({}, window.FIG_SUBJ, SUBJ);
+})();

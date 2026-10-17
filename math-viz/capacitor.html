@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>المتسعة</title>
+<style>
+:root{--bg:#f4f1ea;--ink:#27231d;--muted:#8a8172;--acc:#2f7d5b;--soft:#efe9dd;--line:#e4ded2;--card:#fff;--bad:#c0563f;--gold:#d8a53a}
+*{box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:10px}
+.eq{text-align:center;font-size:15px;font-weight:700;color:var(--acc);margin:0 0 8px}
+canvas{display:block;margin:0 auto;border-radius:12px;background:var(--card);border:1px solid var(--line)}
+.ctrl{display:flex;justify-content:center;gap:10px;margin:8px 0;flex-wrap:wrap}
+.param{display:flex;align-items:center;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 8px}
+.param label{font-size:13px;font-weight:700;color:var(--acc);min-width:16px;text-align:center}
+.param input{width:56px;border:1px solid var(--line);border-radius:6px;padding:4px;font-size:13px;text-align:center;font-family:inherit}
+.param button{min-width:32px;min-height:32px;border:0;border-radius:6px;background:var(--soft);cursor:pointer;font-size:14px;font-family:inherit;line-height:1}
+.info{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:8px;padding:0 8px}
+.info b{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="eq" id="eqLabel">C = ε₀·εr·A/d &nbsp;·&nbsp; Q = CV &nbsp;·&nbsp; E = V/d</div>
+<canvas id="cv" width="340" height="260"></canvas>
+<div class="ctrl">
+  <div class="param"><label>V</label><input id="iV" value="12"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>d</label><input id="id" value="0.02"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>εr</label><input id="ie" value="4"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>A</label><input id="iA" value="0.01"><button class="up">▲</button><button class="dn">▼</button></div>
+</div>
+<div class="info" id="infoBar"></div>
+<script>
+const INK='#27231d',MUTED='#8a8172',ACC='#2f7d5b',BAD='#c0563f',GOLD='#d8a53a',LINE='#e4ded2',CARD='#fff';
+const P={V:12,d:0.02,e:4,A:0.01,sV:1,sd:0.001,se:1,sA:0.001};
+const cv=document.getElementById('cv'),ct=cv.getContext('2d');
+const W=cv.width,H=cv.height;
+const px=function(v,n){return Math.round(v*Math.pow(10,n))/Math.pow(10,n);};
+function adj(k,d,n){P[k]=px(P[k]+d,n||6);if(k==='d'&&P[k]<0.001)P[k]=0.001;if(k==='d'&&P[k]>0.1)P[k]=0.1;if(k==='e'&&P[k]<1)P[k]=1;if(k==='e'&&P[k]>100)P[k]=100;if(k==='A'&&P[k]<0.001)P[k]=0.001;if(k==='A'&&P[k]>1)P[k]=1;if(k==='V'&&P[k]<1)P[k]=1;if(k==='V'&&P[k]>100)P[k]=100;sync();draw();}
+function sync(){document.getElementById('iV').value=P.V;document.getElementById('id').value=P.d;document.getElementById('ie').value=P.e;document.getElementById('iA').value=P.A;}
+document.querySelectorAll('.param').forEach(function(p){
+  var k=p.querySelector('label').textContent,inp=p.querySelector('input'),bs=p.querySelectorAll('button');
+  var n=6;if(k==='V')n=0;if(k==='d')n=6;if(k==='e')n=0;if(k==='A')n=6;
+  bs[0].onclick=function(){adj(k,k==='V'?P.sV:k==='d'?P.sd:k==='e'?P.se:P.sA,n);};
+  bs[1].onclick=function(){adj(k,-(k==='V'?P.sV:k==='d'?P.sd:k==='e'?P.se:P.sA),n);};
+  inp.onchange=function(){var v=parseFloat(inp.value);if(!isNaN(v)){adj(k,v,n);}};
+});
+const EPS0=8.854e-12;
+function sci(num){
+  if(num===0)return '0';
+  var e=Math.floor(Math.log10(Math.abs(num))),m=num/Math.pow(10,e);
+  return m.toFixed(2)+'×10⁻'+(e<0?-e:e);
+}
+function draw(){
+  ct.clearRect(0,0,W,H);
+  var C=EPS0*P.e*P.A/P.d;
+  var Q=C*P.V;
+  var E=P.V/P.d;
+  // plates
+  var leftX=70,rightX=W-70,topY=50,botY=H-50;
+  ct.fillStyle=BAD;ct.fillRect(leftX,topY,14,botY-topY);
+  ct.fillStyle=ACC;ct.fillRect(rightX,topY,14,botY-topY);
+  ct.fillStyle=BAD;ct.font='16px system-ui';ct.textAlign='center';ct.fillText('+',leftX+7,topY-14);
+  ct.fillStyle=ACC;ct.font='16px system-ui';ct.textAlign='center';ct.fillText('−',rightX+7,topY-14);
+  // field lines
+  ct.strokeStyle=MUTED;ct.lineWidth=1.4;
+  var nlines=5;
+  for(var i=0;i<nlines;i++){
+    var yy=topY+(botY-topY)*(i+1)/(nlines+1);
+    ct.beginPath();ct.moveTo(leftX+14,yy);ct.lineTo(rightX,yy);ct.stroke();
+  }
+  // distance d arrow
+  ct.strokeStyle=INK;ct.lineWidth=1.4;
+  ct.beginPath();ct.moveTo(leftX-22,botY+20);ct.lineTo(rightX+22,botY+20);ct.stroke();
+  ct.beginPath();ct.moveTo(leftX-22,botY+20);ct.lineTo(leftX-16,botY+28);ct.stroke();
+  ct.beginPath();ct.moveTo(rightX+22,botY+20);ct.lineTo(rightX+16,botY+28);ct.stroke();
+  ct.fillStyle=INK;ct.font='13px system-ui';ct.textAlign='center';ct.fillText('d',W/2,botY+34);
+  // E label
+  ct.fillStyle=INK;ct.font='13px system-ui';ct.textAlign='center';ct.fillText('E',W/2-40,(topY+botY)/2-10);
+  // info
+  document.getElementById('eqLabel').textContent='C = ε₀·εr·A/d &nbsp;·&nbsp; Q = CV &nbsp;·&nbsp; E = V/d';
+  document.getElementById('infoBar').innerHTML='<b>C =</b> '+sci(C)+' F &nbsp; <b>Q =</b> '+sci(Q)+' C &nbsp; <b>E =</b> '+sci(E)+' V/m';
+}
+draw();
+</script>
+</body>
+</html>

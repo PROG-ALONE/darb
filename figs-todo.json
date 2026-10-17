@@ -1,0 +1,3945 @@
+{
+ "generated": "2026-10-17",
+ "note": "كل موضوع في السادس العلمي + مفتاح الرسم المطلوب. need_new_fig=أنشئ رسماً بمفتاح figKey وأدرج {t:fig,k:figKey} في explain. fix_broken_fig=المفتاح مُستدعى لكنه غير مُعرّف، أنشئه. has_working_fig=موجود، لا تلمسه. المصدر: الكتاب الرسمي لصفحة الموضوع فقط.",
+ "summary": {
+  "total": 344,
+  "need_new_fig": 301,
+  "fix_broken_fig_topics": 8,
+  "has_working_fig": 35,
+  "broken_keys_total": 8
+ },
+ "broken_refs": [
+  {
+   "key": "istifhamNida",
+   "file": "arabic-12-u1.js",
+   "title": "أسلوب الاستفهام ونوعاه من حيث الجواب",
+   "page": "8–9",
+   "cap": "الشكل: الاستفهام تصديقًا وتعيينًا، والنداء بمنادٍ ونادٍ"
+  },
+  {
+   "key": "i3rabSentence",
+   "file": "arabic-12-u1.js",
+   "title": "إعراب أسماء الاستفهام الدالة على الذات (مَن، ما، ماذا، أيّ)",
+   "page": "13–16",
+   "cap": "الشكل: الإعراب البصري — إعراب اسم الاستفهام في جوابه"
+  },
+  {
+   "key": "jumlaTypes",
+   "file": "arabic-12-u1.js",
+   "title": "خلاصة القواعد وتحويل الجمل إلى استفهام",
+   "page": "21–23، 31",
+   "cap": "الشكل: أنواع الجملة — اسمية وفعلية، وكيف تتحوّل إلى استفهام"
+  },
+  {
+   "key": "mafoulBiNaWaibih",
+   "file": "arabic-12-u3.js",
+   "title": "تقديم المفعول به على فعله: الموضعان الأول والثاني",
+   "page": "92–93",
+   "cap": "الشكل: المفعول به ونوائبه عند التقديم (ظرف، جار ومجرور، مصدر مؤول)"
+  },
+  {
+   "key": "carbonPhotosynthesis",
+   "file": "biology-12-c1.js",
+   "title": "العضيات: الشبكة البلازمية، كولجي، المايتوكوندريا، البلاستيدات",
+   "page": "15–19",
+   "cap": "الشكل: البلاستيدة الخضراء — من ماء وثاني أكسيد الكربون يخرج سكر وأكسجين"
+  },
+  {
+   "key": "cellularRespiration",
+   "file": "biology-12-c1.js",
+   "title": "الأيض الخلوي والتنفس",
+   "page": "29–33",
+   "cap": "الشكل: التنفس الخلوي — تحطيم الكلوكوز في المايتوكوندريا لتحرير الطاقة"
+  },
+  {
+   "key": "cellReproCycle",
+   "file": "biology-12-c1.js",
+   "title": "الانقسام المباشر والانقسام الخيطي",
+   "page": "34–36",
+   "cap": "الشكل: دورة الخلية — الانقسام المباشر يحافظ على عدد الكروموسومات"
+  },
+  {
+   "key": "inheritanceChromosomes",
+   "file": "biology-12-c5.js",
+   "title": "الوراثة المندلية",
+   "page": "",
+   "cap": "الشكل: الصبغيات — كيف تنتقل الصفات من الأبوين إلى الأبناء"
+  }
+ ],
+ "topics": [
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u1.js",
+   "topicId": "r12u1t1",
+   "title": "المطالعة: بغدادُ حاضرةُ الدُّنيا",
+   "page": "6–7",
+   "sec": "المطالعة",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u1t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u1.js",
+   "topicId": "r12u1t2",
+   "title": "أسلوب الاستفهام ونوعاه من حيث الجواب",
+   "page": "8–9",
+   "sec": "القواعد",
+   "status": "fix_broken_fig",
+   "figKey": "istifhamNida",
+   "existingRefs": [
+    "istifhamNida",
+    "istifhamTypes"
+   ]
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u1.js",
+   "topicId": "r12u1t3",
+   "title": "حرفا الاستفهام: الهمزة وهل",
+   "page": "9–10",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u1t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u1.js",
+   "topicId": "r12u1t4",
+   "title": "أسماء الاستفهام ودلالاتها",
+   "page": "11–12",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u1t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u1.js",
+   "topicId": "r12u1t5",
+   "title": "إعراب أسماء الاستفهام الدالة على الذات (مَن، ما، ماذا، أيّ)",
+   "page": "13–16",
+   "sec": "القواعد",
+   "status": "fix_broken_fig",
+   "figKey": "i3rabSentence",
+   "existingRefs": [
+    "i3rabSentence"
+   ]
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u1.js",
+   "topicId": "r12u1t6",
+   "title": "إعراب أسماء الزمان والمكان والحال (متى، أيّان، أين، أنّى، كيف)",
+   "page": "16–18، 24–25",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u1t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u1.js",
+   "topicId": "r12u1t7",
+   "title": "كم الاستفهامية والخبرية، وأيّ للحدث، والاستفهام المجازي",
+   "page": "18–20",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u1t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u1.js",
+   "topicId": "r12u1t8",
+   "title": "خلاصة القواعد وتحويل الجمل إلى استفهام",
+   "page": "21–23، 31",
+   "sec": "القواعد",
+   "status": "fix_broken_fig",
+   "figKey": "jumlaTypes",
+   "existingRefs": [
+    "jumlaTypes"
+   ]
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u1.js",
+   "topicId": "r12u1t9",
+   "title": "الأدب الحديث، الشعر الحديث، مدرسة الإحياء",
+   "page": "33–35",
+   "sec": "الأدب",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u1t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u1.js",
+   "topicId": "r12u1t10",
+   "title": "محمد سعيد الحبوبي — موشحة «يا غزال الكرخ»",
+   "page": "35–39",
+   "sec": "الأدب",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u1t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u1.js",
+   "topicId": "r12u1t11",
+   "title": "علي الشرقي — قصيدة «السيف والقلم»",
+   "page": "39–42",
+   "sec": "الأدب",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u1t11",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u2.js",
+   "topicId": "r12u2t1",
+   "title": "المطالعة: التضحية طريق النصر",
+   "page": "43–84",
+   "sec": "المطالعة",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u2t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u2.js",
+   "topicId": "r12u2t2",
+   "title": "النعت: مشتقٌّ ومُؤَوَّل، وأحواله وأغراضه",
+   "page": "43–84",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u2t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u2.js",
+   "topicId": "r12u2t3",
+   "title": "الصورة البلاغية: التشبيه والاستعارة في النصّ",
+   "page": "43–84",
+   "sec": "البلاغة",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u2t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u2.js",
+   "topicId": "r12u2t4",
+   "title": "إملاء: التاء المربوطة والتاء المفتوحة",
+   "page": "43–84",
+   "sec": "الإملاء",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u2t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u2.js",
+   "topicId": "r12u2t5",
+   "title": "موضوع تعبير: فقرة عن التضحية والبطولة",
+   "page": "43–84",
+   "sec": "التعبير",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u2t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u3.js",
+   "topicId": "r12u3t1",
+   "title": "المطالعة: الأمل مفتاح النجاح",
+   "page": "85–90",
+   "sec": "المطالعة",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u3t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u3.js",
+   "topicId": "r12u3t2",
+   "title": "التقديم والتأخير: تقديم الخبر على المبتدأ (جوازًا)",
+   "page": "90–91",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u3t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u3.js",
+   "topicId": "r12u3t3",
+   "title": "وجوب تقديم الخبر: الموضعان الأول والثاني",
+   "page": "91–92",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u3t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u3.js",
+   "topicId": "r12u3t4",
+   "title": "وجوب تقديم الخبر: الموضعان الثالث والرابع",
+   "page": "92",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u3t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u3.js",
+   "topicId": "r12u3t5",
+   "title": "تقديم المفعول به على فعله: الموضعان الأول والثاني",
+   "page": "92–93",
+   "sec": "القواعد",
+   "status": "fix_broken_fig",
+   "figKey": "mafoulBiNaWaibih",
+   "existingRefs": [
+    "mafoulBiNaWaibih"
+   ]
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u3.js",
+   "topicId": "r12u3t6",
+   "title": "تقديم المفعول به: الموضعان الثالث والرابع وأغراض التقديم",
+   "page": "93–94",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u3t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u3.js",
+   "topicId": "r12u3t7",
+   "title": "مراجعة شاملة: تقويم اللسان والتمارين المحلولة",
+   "page": "95–100",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u3t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u3.js",
+   "topicId": "r12u3t8",
+   "title": "البلاغة: الصور البلاغية في نص الأمل وقصيدة أغمض جفونك",
+   "page": "85–104",
+   "sec": "البلاغة",
+   "status": "has_working_fig",
+   "figKey": "qalbMajaz",
+   "existingRefs": [
+    "qalbMajaz"
+   ]
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u3.js",
+   "topicId": "r12u3t9",
+   "title": "الإملاء: التدريب الإملائي على كلمات نصوص الوحدة",
+   "page": "85–104",
+   "sec": "الإملاء",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u3t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u3.js",
+   "topicId": "r12u3t10",
+   "title": "التعبير: التعبير الشفهي والتعبير التحري",
+   "page": "100–101",
+   "sec": "التعبير",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u3t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u3.js",
+   "topicId": "r12u3t11",
+   "title": "خلاصة الوحدة: الأمل مفتاح النجاح",
+   "page": "85–104",
+   "sec": "خلاصة",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u3t11",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u4.js",
+   "topicId": "r12u4t1",
+   "title": "المطالعة: نِعمةُ المطر",
+   "page": "105–109",
+   "sec": "المطالعة",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u4t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u4.js",
+   "topicId": "r12u4t2",
+   "title": "أسلوب التوكيد: مفهومه والتوكيد اللفظي",
+   "page": "109–111",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u4t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u4.js",
+   "topicId": "r12u4t3",
+   "title": "التوكيد المعنوي وألفاظه",
+   "page": "111–113",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u4t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u4.js",
+   "topicId": "r12u4t4",
+   "title": "التوكيد بالحروف الزائدة",
+   "page": "113–115",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u4t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u4.js",
+   "topicId": "r12u4t5",
+   "title": "التعجب: صيغتاه القياسيتان",
+   "page": "115–117",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u4t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u4.js",
+   "topicId": "r12u4t6",
+   "title": "التوكيد بالنعت وبالمصدر (المفعول المطلق)",
+   "page": "117–121",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u4t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u4.js",
+   "topicId": "r12u4t7",
+   "title": "الأدب: مدرسة الشعر الحرّ",
+   "page": "125–132",
+   "sec": "الأدب",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u4t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u4.js",
+   "topicId": "r12u4t8",
+   "title": "قصيدة (رؤيا) لأدونيس — نصّ للحفظ",
+   "page": "132–135",
+   "sec": "الأدب",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u4t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u4.js",
+   "topicId": "r12u4t9",
+   "title": "التعبير وخلاصة الوحدة",
+   "page": "135–136",
+   "sec": "التعبير",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u4t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u5.js",
+   "topicId": "r12u5t1",
+   "title": "المطالعة: فلسطين",
+   "page": "137–163",
+   "sec": "المطالعة",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u5t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u5.js",
+   "topicId": "r12u5t2",
+   "title": "التمييز: ملحوظٌ وغير ملحوظ، وأحواله",
+   "page": "137–163",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u5t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u5.js",
+   "topicId": "r12u5t3",
+   "title": "الصورة البلاغية: الكناية والاستعارة في نصّ فلسطين",
+   "page": "137–163",
+   "sec": "البلاغة",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u5t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u5.js",
+   "topicId": "r12u5t4",
+   "title": "إملاء: الهمزة المتوسطة والمنتهية بالهمزة",
+   "page": "137–163",
+   "sec": "الإملاء",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u5t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u5.js",
+   "topicId": "r12u5t5",
+   "title": "موضوع تعبير: فقرة عن القدس وفلسطين",
+   "page": "137–163",
+   "sec": "التعبير",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u5t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u6.js",
+   "topicId": "r12u6t1",
+   "title": "المطالعة: بالإصلاح تنهض الأمة",
+   "page": "3–26",
+   "sec": "المطالعة",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u6t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u6.js",
+   "topicId": "r12u6t2",
+   "title": "المفعول المطلق",
+   "page": "3–26",
+   "sec": "القواعد",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u6t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u6.js",
+   "topicId": "r12u6t3",
+   "title": "الاستعارة",
+   "page": "3–26",
+   "sec": "البلاغة",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u6t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u6.js",
+   "topicId": "r12u6t4",
+   "title": "همزة الوصل والقطع",
+   "page": "3–26",
+   "sec": "الإملاء",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u6t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة العربية",
+   "file": "arabic-12-u6.js",
+   "topicId": "r12u6t5",
+   "title": "موضوع تعبير/كتابة",
+   "page": "3–26",
+   "sec": "التعبير",
+   "status": "need_new_fig",
+   "figKey": "fig_r12u6t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u1.js",
+   "topicId": "e12u1t1",
+   "title": "My toe is bleeding",
+   "page": "6",
+   "sec": "Lesson 1",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u1t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u1.js",
+   "topicId": "e12u1t2",
+   "title": "I was ice skating, and I fell over",
+   "page": "7, 88",
+   "sec": "Lesson 2",
+   "status": "has_working_fig",
+   "figKey": "tenseTimeline",
+   "existingRefs": [
+    "tenseTimeline"
+   ]
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u1.js",
+   "topicId": "e12u1t3",
+   "title": "My friends were all watching, so I didn’t want to give up",
+   "page": "8",
+   "sec": "Lesson 3",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u1t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u1.js",
+   "topicId": "e12u1t4",
+   "title": "Most smokers take it up as teenagers",
+   "page": "9",
+   "sec": "Lesson 4",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u1t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u1.js",
+   "topicId": "e12u1t5",
+   "title": "Take some exercise every day",
+   "page": "10",
+   "sec": "Lesson 5",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u1t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u1.js",
+   "topicId": "e12u1t6",
+   "title": "Life used to be different",
+   "page": "11, 88",
+   "sec": "Lesson 6",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u1t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u1.js",
+   "topicId": "e12u1t7",
+   "title": "Let’s start with diet",
+   "page": "12",
+   "sec": "Lesson 7",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u1t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u1.js",
+   "topicId": "e12u1t8",
+   "title": "Using your phone behind the wheel",
+   "page": "13",
+   "sec": "Lesson 8",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u1t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u1.js",
+   "topicId": "e12u1t9",
+   "title": "Against all odds — Najla Imad Lafta",
+   "page": "14–15",
+   "sec": "Lesson 9 + Round up",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u1t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u2.js",
+   "topicId": "e12u2t1",
+   "title": "Law and order",
+   "page": "18, AB 28–29",
+   "sec": "Lesson 1",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u2t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u2.js",
+   "topicId": "e12u2t2",
+   "title": "A police officer’s duties",
+   "page": "19, AB 30",
+   "sec": "Lesson 2",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u2t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u2.js",
+   "topicId": "e12u2t3",
+   "title": "have to, must, need to and their negatives",
+   "page": "19, AB 31",
+   "sec": "Lesson 2 — Grammar",
+   "status": "has_working_fig",
+   "figKey": "modalObligation",
+   "existingRefs": [
+    "modalObligation"
+   ]
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u2.js",
+   "topicId": "e12u2t4",
+   "title": "Airport security",
+   "page": "20, AB 32",
+   "sec": "Lesson 3",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u2t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u2.js",
+   "topicId": "e12u2t5",
+   "title": "Polite requests, suggestions, advice and offers",
+   "page": "20, AB 33",
+   "sec": "Lesson 3 — Functions",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u2t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u2.js",
+   "topicId": "e12u2t6",
+   "title": "Applying for a job",
+   "page": "21, AB 34–35",
+   "sec": "Lesson 4",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u2t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u2.js",
+   "topicId": "e12u2t7",
+   "title": "Military jobs",
+   "page": "22, AB 36–37",
+   "sec": "Lesson 5",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u2t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u2.js",
+   "topicId": "e12u2t8",
+   "title": "A robbery",
+   "page": "23, AB 38–39",
+   "sec": "Lesson 6",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u2t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u2.js",
+   "topicId": "e12u2t9",
+   "title": "A safety brochure",
+   "page": "24, AB 40–41",
+   "sec": "Lesson 7",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u2t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u2.js",
+   "topicId": "e12u2t10",
+   "title": "Road safety",
+   "page": "25, AB 42–43",
+   "sec": "Lesson 8",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u2t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u2.js",
+   "topicId": "e12u2t11",
+   "title": "Security technology",
+   "page": "26–27, AB 44–47",
+   "sec": "Lesson 9 + Round up",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u2t11",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u3.js",
+   "topicId": "e12u3t1",
+   "title": "I’d like to work in the tourist industry",
+   "page": "30, AB 52–53",
+   "sec": "Lesson 1",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u3t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u3.js",
+   "topicId": "e12u3t2",
+   "title": "If you come round tomorrow, I’ll help you",
+   "page": "31, AB 54–55",
+   "sec": "Lesson 2",
+   "status": "has_working_fig",
+   "figKey": "conditionalLadder",
+   "existingRefs": [
+    "conditionalLadder"
+   ]
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u3.js",
+   "topicId": "e12u3t3",
+   "title": "If you could choose any job …",
+   "page": "32, AB 56–57",
+   "sec": "Lesson 3",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u3t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u3.js",
+   "topicId": "e12u3t4",
+   "title": "She asked when she had decided",
+   "page": "33, AB 58",
+   "sec": "Lesson 4",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u3t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u3.js",
+   "topicId": "e12u3t5",
+   "title": "Reporting verbs",
+   "page": "33–34, AB 59",
+   "sec": "Lesson 4 — Functions",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u3t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u3.js",
+   "topicId": "e12u3t6",
+   "title": "I wish I’d brought my sunglasses",
+   "page": "34, AB 60–61",
+   "sec": "Lesson 5",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u3t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u3.js",
+   "topicId": "e12u3t7",
+   "title": "If I’d been fitter",
+   "page": "35, AB 62–63",
+   "sec": "Lesson 6",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u3t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u3.js",
+   "topicId": "e12u3t8",
+   "title": "Learn English in the UK",
+   "page": "36, AB 64–65",
+   "sec": "Lesson 7",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u3t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u3.js",
+   "topicId": "e12u3t9",
+   "title": "Summer jobs",
+   "page": "37, AB 66–67",
+   "sec": "Lesson 8",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u3t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u3.js",
+   "topicId": "e12u3t10",
+   "title": "Focus on careers — conference interpreter",
+   "page": "38, AB 68–69",
+   "sec": "Lesson 9",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u3t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u3.js",
+   "topicId": "e12u3t11",
+   "title": "Round up",
+   "page": "39, AB 70–71",
+   "sec": "Round up + Writing",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u3t11",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u4.js",
+   "topicId": "e12u4t1",
+   "title": "Rashid & Rana Designs",
+   "page": "42, AB 76",
+   "sec": "Lesson 1 · Vocabulary",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u4t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u4.js",
+   "topicId": "e12u4t2",
+   "title": "Past simple: the story of a new company",
+   "page": "42, AB 77",
+   "sec": "Lesson 1 · Grammar",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u4t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u4.js",
+   "topicId": "e12u4t3",
+   "title": "Writing: an email about your company",
+   "page": "AB 77",
+   "sec": "Lesson 1 · Writing",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u4t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u4.js",
+   "topicId": "e12u4t4",
+   "title": "Fitness tech",
+   "page": "43, AB 78",
+   "sec": "Lesson 2 · Reading",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u4t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u4.js",
+   "topicId": "e12u4t5",
+   "title": "People didn’t use to work out at home",
+   "page": "43, AB 79",
+   "sec": "Lesson 2 · Grammar",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u4t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u4.js",
+   "topicId": "e12u4t6",
+   "title": "If you want to be the best!",
+   "page": "44, AB 80",
+   "sec": "Lesson 3 · Functions",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u4t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u4.js",
+   "topicId": "e12u4t7",
+   "title": "have to, don’t have to, mustn’t, should, shouldn’t",
+   "page": "44, AB 81",
+   "sec": "Lesson 3 · Grammar",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u4t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u4.js",
+   "topicId": "e12u4t8",
+   "title": "If only …",
+   "page": "45, AB 82",
+   "sec": "Lesson 4 · Reading",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u4t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u4.js",
+   "topicId": "e12u4t9",
+   "title": "I wish, If only and the third conditional",
+   "page": "45, AB 82–83",
+   "sec": "Lesson 4 · Grammar",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u4t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u4.js",
+   "topicId": "e12u4t10",
+   "title": "Unit 4 revision and test",
+   "page": "AB 84–85",
+   "sec": "Unit 4 Test · Revision",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u4t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u5.js",
+   "topicId": "e12u5t1",
+   "title": "Let’s do some sightseeing",
+   "page": "48, AB 86–87",
+   "sec": "Lesson 1 · Vocabulary",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u5t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u5.js",
+   "topicId": "e12u5t2",
+   "title": "Have you ever stayed in a really unusual hotel?",
+   "page": "49, AB 88",
+   "sec": "Lesson 2 · Functions",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u5t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u5.js",
+   "topicId": "e12u5t3",
+   "title": "just, already and yet",
+   "page": "49, AB 89",
+   "sec": "Lesson 2 · Grammar",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u5t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u5.js",
+   "topicId": "e12u5t4",
+   "title": "I’ve been coming here since 2009",
+   "page": "50, AB 90–91",
+   "sec": "Lesson 3 · Reading",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u5t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u5.js",
+   "topicId": "e12u5t5",
+   "title": "How long …? for and since",
+   "page": "50, AB 90–91",
+   "sec": "Lesson 3 · Grammar",
+   "status": "has_working_fig",
+   "figKey": "timePrepositions",
+   "existingRefs": [
+    "timePrepositions"
+   ]
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u5.js",
+   "topicId": "e12u5t6",
+   "title": "I’ve tried it a few times",
+   "page": "51, AB 92–93",
+   "sec": "Lesson 4 · Grammar",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u5t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u5.js",
+   "topicId": "e12u5t7",
+   "title": "We couldn’t get a room because we hadn’t booked",
+   "page": "52, AB 94–95",
+   "sec": "Lesson 5 · Grammar",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u5t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u5.js",
+   "topicId": "e12u5t8",
+   "title": "The atmosphere was really peaceful",
+   "page": "53, AB 96–97",
+   "sec": "Lesson 6 · Reading",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u5t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u5.js",
+   "topicId": "e12u5t9",
+   "title": "Beautiful Kerkennah",
+   "page": "54, AB 98–99",
+   "sec": "Lesson 7 · Grammar",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u5t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u5.js",
+   "topicId": "e12u5t10",
+   "title": "Tourism and environment",
+   "page": "55, AB 100–101",
+   "sec": "Lesson 8 · Writing",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u5t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "اللغة الإنكليزية",
+   "file": "english-12-u5.js",
+   "topicId": "e12u5t11",
+   "title": "Why are holidays so important?",
+   "page": "56–57, AB 102–105",
+   "sec": "Lesson 9 + Round up · Reading",
+   "status": "need_new_fig",
+   "figKey": "fig_e12u5t11",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u1.js",
+   "topicId": "i12u1t0",
+   "title": "أحكام النون الساكنة والتنوين",
+   "page": "4–9",
+   "sec": "من أحكام التلاوة",
+   "status": "has_working_fig",
+   "figKey": "noonTanweenRules",
+   "existingRefs": [
+    "noonTanweenRules"
+   ]
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u1.js",
+   "topicId": "i12u1t1",
+   "title": "من سورة البقرة (153–170)",
+   "page": "10–19",
+   "sec": "الدرس الأول: القرآن",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u1t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u1.js",
+   "topicId": "i12u1t2",
+   "title": "أصحاب الكهف",
+   "page": "20–25",
+   "sec": "الدرس الثاني: القصص",
+   "status": "has_working_fig",
+   "figKey": "kahfStages",
+   "existingRefs": [
+    "kahfStages"
+   ]
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u1.js",
+   "topicId": "i12u1t3",
+   "title": "التعاون بين المسلمين (للشرح فقط)",
+   "page": "26–30",
+   "sec": "الدرس الثالث: الحديث",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u1t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u1.js",
+   "topicId": "i12u1t4",
+   "title": "نظام الأسرة في الإسلام",
+   "page": "31–40",
+   "sec": "الدرس الرابع: أبحاث",
+   "status": "has_working_fig",
+   "figKey": "familySystem",
+   "existingRefs": [
+    "familySystem"
+   ]
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u1.js",
+   "topicId": "i12u1t5",
+   "title": "النهي عن الغضب",
+   "page": "41–45",
+   "sec": "الدرس الخامس: التهذيب",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u1t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u2.js",
+   "topicId": "i12u2tt1",
+   "title": "قصة موسى والعبد الصالح (سورة الكهف 60–82)",
+   "page": "46–88",
+   "sec": "من القرآن الكريم",
+   "status": "has_working_fig",
+   "figKey": "musaThreeActs",
+   "existingRefs": [
+    "musaThreeActs"
+   ]
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u2.js",
+   "topicId": "i12u2tt2",
+   "title": "موسى والعبد الصالح (ع)",
+   "page": "46–88",
+   "sec": "من قصص القرآن",
+   "status": "has_working_fig",
+   "figKey": "musaThreeActs",
+   "existingRefs": [
+    "musaThreeActs"
+   ]
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u2.js",
+   "topicId": "i12u2tt3",
+   "title": "محاسبة النفس",
+   "page": "46–88",
+   "sec": "من الحديث الشريف",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u2tt3",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u2.js",
+   "topicId": "i12u2tt4",
+   "title": "نظرة عامة للنظام الاقتصادي في الإسلام",
+   "page": "46–88",
+   "sec": "أبحاث",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u2tt4",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u2.js",
+   "topicId": "i12u2tt5",
+   "title": "الرجولة",
+   "page": "46–88",
+   "sec": "التهذيب",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u2tt5",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u3.js",
+   "topicId": "i12u3tt1",
+   "title": "من سورة النساء (1–10)",
+   "page": "72–97",
+   "sec": "من القرآن الكريم",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u3tt1",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u4.js",
+   "topicId": "i12u4tt1",
+   "title": "سورة الإسراء (23–39)",
+   "page": "102–129",
+   "sec": "من القرآن الكريم",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u4tt1",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u4.js",
+   "topicId": "i12u4tt2",
+   "title": "قصة شعيب (ع)",
+   "page": "102–129",
+   "sec": "من قصص القرآن",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u4tt2",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u4.js",
+   "topicId": "i12u4tt3",
+   "title": "في الجهاد وكرامة المجاهد",
+   "page": "102–129",
+   "sec": "من الحديث الشريف",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u4tt3",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u4.js",
+   "topicId": "i12u4tt4",
+   "title": "الوظائف الاقتصادية للدولة",
+   "page": "102–129",
+   "sec": "أبحاث",
+   "status": "has_working_fig",
+   "figKey": "moneyCycle",
+   "existingRefs": [
+    "moneyCycle"
+   ]
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u4.js",
+   "topicId": "i12u4tt5",
+   "title": "التكبر",
+   "page": "102–129",
+   "sec": "التهذيب",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u4tt5",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u5.js",
+   "topicId": "i12u5tt1",
+   "title": "سورة الأنبياء",
+   "page": "132–164",
+   "sec": "من القرآن الكريم",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u5tt1",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u5.js",
+   "topicId": "i12u5tt2",
+   "title": "نبأ الفاسق",
+   "page": "ص132–164",
+   "sec": "من قصص القرآن",
+   "status": "has_working_fig",
+   "figKey": "verifyNews",
+   "existingRefs": [
+    "verifyNews"
+   ]
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u5.js",
+   "topicId": "i12u5tt3",
+   "title": "حسن الخلق",
+   "page": "132–164",
+   "sec": "من الحديث الشريف",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u5tt3",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u5.js",
+   "topicId": "i12u5tt4",
+   "title": "التسامح والتعايش السلمي",
+   "page": "132–164",
+   "sec": "أبحاث",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u5tt4",
+   "existingRefs": []
+  },
+  {
+   "subject": "التربية الإسلامية",
+   "file": "islamic-12-u5.js",
+   "topicId": "i12u5tt5",
+   "title": "القناعة",
+   "page": "132–164",
+   "sec": "التهذيب",
+   "status": "need_new_fig",
+   "figKey": "fig_i12u5tt5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c1.js",
+   "topicId": "m12c1t1",
+   "title": "الحاجة الى توسيع مجموعة الاعداد الحقيقية",
+   "page": "6–10",
+   "sec": "1-1",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c1t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c1.js",
+   "topicId": "m12c1t2",
+   "title": "العمليات على مجموعة الاعداد المركبة",
+   "page": "11–15",
+   "sec": "1-2",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c1t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c1.js",
+   "topicId": "m12c1t3",
+   "title": "مرافق العدد المركب",
+   "page": "15–20",
+   "sec": "1-3",
+   "status": "has_working_fig",
+   "figKey": "complexConjugate",
+   "existingRefs": [
+    "complexConjugate"
+   ]
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c1.js",
+   "topicId": "m12c1t4",
+   "title": "الجذور التربيعية للعدد المركب",
+   "page": "21–23",
+   "sec": "1-4",
+   "status": "has_working_fig",
+   "figKey": "complexSqrt",
+   "existingRefs": [
+    "complexSqrt"
+   ]
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c1.js",
+   "topicId": "m12c1t5",
+   "title": "حل المعادلة التربيعية في ℂ",
+   "page": "24–26",
+   "sec": "1-5",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c1t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c1.js",
+   "topicId": "m12c1t6",
+   "title": "الجذور التكعيبية للواحد الصحيح",
+   "page": "27–31",
+   "sec": "1-6",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c1t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c1.js",
+   "topicId": "m12c1t7",
+   "title": "التمثيل الهندسي للاعداد المركبة",
+   "page": "32–35",
+   "sec": "1-7",
+   "status": "has_working_fig",
+   "figKey": "complexPlane",
+   "existingRefs": [
+    "complexPlane",
+    "pythagoras"
+   ]
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c1.js",
+   "topicId": "m12c1t8",
+   "title": "الصيغة القطبية للعدد المركب",
+   "page": "36–40",
+   "sec": "1-8",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c1t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c1.js",
+   "topicId": "m12c1t9",
+   "title": "مبرهنة ديمواڤر",
+   "page": "41–47",
+   "sec": "1-9",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c1t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c2.js",
+   "topicId": "m12c2t1",
+   "title": "القطع المخروطي",
+   "page": "48–51",
+   "sec": "1-2",
+   "status": "has_working_fig",
+   "figKey": "conicChart",
+   "existingRefs": [
+    "conicChart"
+   ]
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c2.js",
+   "topicId": "m12c2t2",
+   "title": "الدائرة",
+   "page": "52–58",
+   "sec": "2-2",
+   "status": "has_working_fig",
+   "figKey": "circleParts",
+   "existingRefs": [
+    "circleParts"
+   ]
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c2.js",
+   "topicId": "m12c2t3",
+   "title": "القطع المكافئ",
+   "page": "59–68",
+   "sec": "3-2",
+   "status": "has_working_fig",
+   "figKey": "parabolaFocus",
+   "existingRefs": [
+    "parabolaFocus"
+   ]
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c2.js",
+   "topicId": "m12c2t4",
+   "title": "القطع الناقص",
+   "page": "69–78",
+   "sec": "4-2",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c2t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c2.js",
+   "topicId": "m12c2t5",
+   "title": "القطع الزائد",
+   "page": "79–85",
+   "sec": "5-2",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c2t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c2.js",
+   "topicId": "m12c2t6",
+   "title": "تمييز نوع القطع المخروطي",
+   "page": "85–89",
+   "sec": "6-2",
+   "status": "has_working_fig",
+   "figKey": "conicChart",
+   "existingRefs": [
+    "conicChart"
+   ]
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c3.js",
+   "topicId": "m12c3t1",
+   "title": "المعدلات المرتبطة",
+   "page": "91–97",
+   "sec": "3-1",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c3t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c3.js",
+   "topicId": "m12c3t2",
+   "title": "مبرهنتا رول والقيمة المتوسطة",
+   "page": "98–112",
+   "sec": "3-2",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c3t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c3.js",
+   "topicId": "m12c3t3",
+   "title": "اختبار التزايد والتناقص للدالة باستخدام المشتقة الأولى",
+   "page": "113–114",
+   "sec": "3-3",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c3t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c3.js",
+   "topicId": "m12c3t4",
+   "title": "النهاية العظمى والنهاية الصغرى المحلية",
+   "page": "115–118",
+   "sec": "3-4",
+   "status": "has_working_fig",
+   "figKey": "extremaLocal",
+   "existingRefs": [
+    "extremaLocal"
+   ]
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c3.js",
+   "topicId": "m12c3t5",
+   "title": "تقعر وتحدب المنحنيات ونقط الانقلاب",
+   "page": "119–123",
+   "sec": "3-5",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c3t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c3.js",
+   "topicId": "m12c3t6",
+   "title": "اختبار المشتقة الثانية لنقط النهايات العظمى والصغرى المحلية",
+   "page": "124–131",
+   "sec": "3-6",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c3t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c3.js",
+   "topicId": "m12c3t7",
+   "title": "رسم المخطط البياني للدالة",
+   "page": "132–139",
+   "sec": "3-7",
+   "status": "has_working_fig",
+   "figKey": "functionGraph",
+   "existingRefs": [
+    "functionGraph"
+   ]
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c3.js",
+   "topicId": "m12c3t8",
+   "title": "تطبيقات عملية على القيم العظمى أو الصغرى",
+   "page": "140–147",
+   "sec": "3-8",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c3t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c4.js",
+   "topicId": "m12c4t1",
+   "title": "المناطق المحددة بمنحنيات",
+   "page": "148–157",
+   "sec": "4-1",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c4t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c4.js",
+   "topicId": "m12c4t2",
+   "title": "المجاميع العليا والمجاميع السفلى",
+   "page": "158–162",
+   "sec": "4-2",
+   "status": "has_working_fig",
+   "figKey": "riemannSums",
+   "existingRefs": [
+    "riemannSums"
+   ]
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c4.js",
+   "topicId": "m12c4t3",
+   "title": "تعريف التكامل",
+   "page": "163–167",
+   "sec": "4-3",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c4t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c4.js",
+   "topicId": "m12c4t4",
+   "title": "النظرية الأساسية للتكامل – الدالة المقابلة",
+   "page": "168–172",
+   "sec": "4-4",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c4t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c4.js",
+   "topicId": "m12c4t5",
+   "title": "خواص التكامل المحدد",
+   "page": "173–177",
+   "sec": "4-5",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c4t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c4.js",
+   "topicId": "m12c4t6",
+   "title": "التكامل غير المحدد",
+   "page": "178–183",
+   "sec": "4-6",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c4t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c4.js",
+   "topicId": "m12c4t7",
+   "title": "اللوغاريتم الطبيعي",
+   "page": "184–190",
+   "sec": "4-7",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c4t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c4.js",
+   "topicId": "m12c4t8",
+   "title": "إيجاد مساحة منطقة مستوية",
+   "page": "191–205",
+   "sec": "4-8",
+   "status": "has_working_fig",
+   "figKey": "areaUnderCurve",
+   "existingRefs": [
+    "areaUnderCurve"
+   ]
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c4.js",
+   "topicId": "m12c4t9",
+   "title": "الحجوم الدورانية",
+   "page": "206–209",
+   "sec": "4-9",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c4t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c5.js",
+   "topicId": "m12c5t1",
+   "title": "مقدمة",
+   "page": "211–212",
+   "sec": "1-5",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c5t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c5.js",
+   "topicId": "m12c5t2",
+   "title": "حل المعادلة التفاضلية",
+   "page": "213",
+   "sec": "2-5",
+   "status": "has_working_fig",
+   "figKey": "diffEquation",
+   "existingRefs": [
+    "diffEquation"
+   ]
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c5.js",
+   "topicId": "m12c5t3",
+   "title": "الحل الخاص والعام للمعادلة التفاضلية الاعتيادية",
+   "page": "214–217",
+   "sec": "3-5",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c5t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c5.js",
+   "topicId": "m12c5t4",
+   "title": "المعادلات التفاضلية الاعتيادية من المرتبة الأولى والدرجة الأولى",
+   "page": "219",
+   "sec": "4-5",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c5t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c5.js",
+   "topicId": "m12c5t5",
+   "title": "بعض طرق حل المعادلات التفاضلية – فصل المتغيرات",
+   "page": "220–223",
+   "sec": "5-5",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c5t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c6.js",
+   "topicId": "m12c6t1",
+   "title": "تمهيد",
+   "page": "224",
+   "sec": "6-1",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c6t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c6.js",
+   "topicId": "m12c6t2",
+   "title": "الزاوية الزوجية والمستويات المتعامدة",
+   "page": "225–235",
+   "sec": "6-2",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c6t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c6.js",
+   "topicId": "m12c6t3",
+   "title": "الإسقاط العمودي على مستو",
+   "page": "236–240",
+   "sec": "6-3",
+   "status": "has_working_fig",
+   "figKey": "orthoProjection",
+   "existingRefs": [
+    "orthoProjection"
+   ]
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c6.js",
+   "topicId": "m12c6t4",
+   "title": "المسقط العمودي لمستوى على مستوى",
+   "page": "236–240",
+   "sec": "6-4",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c6t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c6.js",
+   "topicId": "m12c6t5",
+   "title": "الزاوية المستوية بين مستويين",
+   "page": "236–240",
+   "sec": "6-5",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c6t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c6.js",
+   "topicId": "m12c6t6",
+   "title": "المساحة الكلية",
+   "page": "236–240",
+   "sec": "6-6",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c6t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الرياضيات",
+   "file": "math-12-c6.js",
+   "topicId": "m12c6t7",
+   "title": "المساحة الجانبية",
+   "page": "236–240",
+   "sec": "6-7",
+   "status": "need_new_fig",
+   "figKey": "fig_m12c6t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c3.js",
+   "topicId": "p12c3t1",
+   "title": "مقدمة",
+   "page": "93",
+   "sec": "1-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c3t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c3.js",
+   "topicId": "p12c3t2",
+   "title": "دوائر التيار المتناوب",
+   "page": "93–95",
+   "sec": "2-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c3t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c3.js",
+   "topicId": "p12c3t3",
+   "title": "دائرة تيار متناوب الحمل فيها مقاومة صرف",
+   "page": "95–96",
+   "sec": "3-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c3t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c3.js",
+   "topicId": "p12c3t4",
+   "title": "القدرة في دائرة تيار متناوب تحتوي مقاومة صرف",
+   "page": "96–97",
+   "sec": "4-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c3t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c3.js",
+   "topicId": "p12c3t5",
+   "title": "المقدار المؤثر للتيار المتناوب",
+   "page": "97–99",
+   "sec": "5-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c3t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c3.js",
+   "topicId": "p12c3t6",
+   "title": "دائرة تيار متناوب الحمل فيها محث صرف",
+   "page": "100–104",
+   "sec": "6-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c3t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c3.js",
+   "topicId": "p12c3t7",
+   "title": "دائرة تيار متناوب الحمل فيها متسعة ذات سعة صرف",
+   "page": "105–108",
+   "sec": "7-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c3t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c3.js",
+   "topicId": "p12c3t8",
+   "title": "دائرة تيار متناوب متوالية الربط تحتوي مقاومة صرف ومحث صرف ومتسعة ذات سعة صرف (R-L-C)",
+   "page": "109–112",
+   "sec": "8-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c3t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c3.js",
+   "topicId": "p12c3t9",
+   "title": "عامل القدرة",
+   "page": "113–115",
+   "sec": "9-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c3t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c3.js",
+   "topicId": "p12c3t10",
+   "title": "الاهتزاز الكهرومغناطيسي",
+   "page": "115–117",
+   "sec": "10-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c3t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c3.js",
+   "topicId": "p12c3t11",
+   "title": "الرنين في دوائر التيار المتناوب",
+   "page": "117–118",
+   "sec": "11-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c3t11",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c3.js",
+   "topicId": "p12c3t12",
+   "title": "عامل النوعية",
+   "page": "118–120",
+   "sec": "12-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c3t12",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c3.js",
+   "topicId": "p12c3t13",
+   "title": "دائرة تيار متناوب متوازية الربط تحتوي مقاومة صرف ومحث صرف ومتسعة ذات سعة صرف (R-L-C)",
+   "page": "120–123",
+   "sec": "13-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c3t13",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c4.js",
+   "topicId": "p12c4t1",
+   "title": "مقدمة",
+   "page": "133",
+   "sec": "1-4",
+   "status": "has_working_fig",
+   "figKey": "soundTravel",
+   "existingRefs": [
+    "soundTravel"
+   ]
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c4.js",
+   "topicId": "p12c4t2",
+   "title": "ماكسويل والنظرية الكهرومغناطيسية",
+   "page": "133–135",
+   "sec": "2-4",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c4t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c4.js",
+   "topicId": "p12c4t3",
+   "title": "توليد الموجات الكهرومغناطيسية من الشحنات المعجلة",
+   "page": "135–137",
+   "sec": "3-4",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c4t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c4.js",
+   "topicId": "p12c4t4",
+   "title": "مبادئ الإرسال والتسلم للموجات الكهرومغناطيسية",
+   "page": "137–139",
+   "sec": "4-4",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c4t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c4.js",
+   "topicId": "p12c4t5",
+   "title": "كيفية عمل دوائر الإرسال والتسلم",
+   "page": "140",
+   "sec": "5-4",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c4t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c4.js",
+   "topicId": "p12c4t6",
+   "title": "الكشف عن الموجات الكهرومغناطيسية ذات التردد الراديوي",
+   "page": "141",
+   "sec": "6-4",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c4t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c4.js",
+   "topicId": "p12c4t7",
+   "title": "التضمين",
+   "page": "142–143",
+   "sec": "7-4",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c4t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c4.js",
+   "topicId": "p12c4t8",
+   "title": "مدى الموجات الراديوية",
+   "page": "143",
+   "sec": "8-4",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c4t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c4.js",
+   "topicId": "p12c4t9",
+   "title": "انتشار الموجات الكهرومغناطيسية",
+   "page": "144–145",
+   "sec": "9-4",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c4t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c4.js",
+   "topicId": "p12c4t10",
+   "title": "بعض تطبيقات الموجات الكهرومغناطيسية",
+   "page": "146–148",
+   "sec": "10-4",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c4t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c5.js",
+   "topicId": "p12c5t1",
+   "title": "مقدمة",
+   "page": "153",
+   "sec": "1-5",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c5t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c5.js",
+   "topicId": "p12c5t2",
+   "title": "تداخل الموجات الضوئية",
+   "page": "153–156",
+   "sec": "2-5",
+   "status": "has_working_fig",
+   "figKey": "waveParts",
+   "existingRefs": [
+    "waveParts"
+   ]
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c5.js",
+   "topicId": "p12c5t3",
+   "title": "تجربة شقي يونك",
+   "page": "157–160",
+   "sec": "3-5",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c5t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c5.js",
+   "topicId": "p12c5t4",
+   "title": "التداخل في الأغشية الرقيقة",
+   "page": "161–162",
+   "sec": "4-5",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c5t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c5.js",
+   "topicId": "p12c5t5",
+   "title": "حيود موجات الضوء",
+   "page": "162–163",
+   "sec": "5-5",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c5t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c5.js",
+   "topicId": "p12c5t6",
+   "title": "محزز الحيود",
+   "page": "163–165",
+   "sec": "6-5",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c5t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c5.js",
+   "topicId": "p12c5t7",
+   "title": "استقطاب الضوء",
+   "page": "165–169",
+   "sec": "7-5",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c5t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c5.js",
+   "topicId": "p12c5t8",
+   "title": "استطارة الضوء",
+   "page": "169–170",
+   "sec": "8-5",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c5t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c6.js",
+   "topicId": "p12c6t1",
+   "title": "مقدمة",
+   "page": "175",
+   "sec": "6-1",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c6t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c6.js",
+   "topicId": "p12c6t2",
+   "title": "نظرية الكم (إشعاع الجسم الأسود وفرضية بلانك)",
+   "page": "177-178",
+   "sec": "6-2",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c6t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c6.js",
+   "topicId": "p12c6t3",
+   "title": "Photoelectric effect",
+   "page": "181",
+   "sec": "6-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c6t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c6.js",
+   "topicId": "p12c6t4",
+   "title": "Photoelectric effect and Einstein\\",
+   "page": "184",
+   "sec": "6-4",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c6t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c6.js",
+   "topicId": "p12c6t5",
+   "title": "Particle-wave duality",
+   "page": "187",
+   "sec": "6-5",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c6t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c6.js",
+   "topicId": "p12c6t6",
+   "title": "Matter waves and de Broglie",
+   "page": "190",
+   "sec": "6-6",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c6t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c6.js",
+   "topicId": "p12c6t7",
+   "title": "Introduction to quantum mechanics",
+   "page": "193",
+   "sec": "6-7",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c6t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c6.js",
+   "topicId": "p12c6t8",
+   "title": "Wave function",
+   "page": "196",
+   "sec": "6-8",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c6t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c6.js",
+   "topicId": "p12c6t9",
+   "title": "Heisenberg uncertainty principle",
+   "page": "197",
+   "sec": "6-9",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c6t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c6.js",
+   "topicId": "p12c6t10",
+   "title": "Relativity theory",
+   "page": "192",
+   "sec": "6-10",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c6t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c6.js",
+   "topicId": "p12c6t11",
+   "title": "Lorentz transformations",
+   "page": "185",
+   "sec": "6-11",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c6t11",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c6.js",
+   "topicId": "p12c6t12",
+   "title": "Mass-energy equivalence",
+   "page": "192",
+   "sec": "6-12",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c6t12",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c7.js",
+   "topicId": "p12c7t1",
+   "title": "مقدمة",
+   "page": "199",
+   "sec": "7-1",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c7t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c7.js",
+   "topicId": "p12c7t2",
+   "title": "البنية البلورية",
+   "page": "201",
+   "sec": "7-2",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c7t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c7.js",
+   "topicId": "p12c7t3",
+   "title": "الشبكة البلورية",
+   "page": "203",
+   "sec": "7-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c7t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c7.js",
+   "topicId": "p12c7t4",
+   "title": "الرابطة الأيونية والتساهمية والمعدنية",
+   "page": "205",
+   "sec": "7-4",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c7t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c7.js",
+   "topicId": "p12c7t5",
+   "title": "طاقة الرابطة",
+   "page": "207",
+   "sec": "7-5",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c7t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c7.js",
+   "topicId": "p12c7t6",
+   "title": "الحزمة التكافؤية والحزمة الناقلة",
+   "page": "209",
+   "sec": "7-6",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c7t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c7.js",
+   "topicId": "p12c7t7",
+   "title": "أشباه الموصلات",
+   "page": "211",
+   "sec": "7-7",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c7t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c7.js",
+   "topicId": "p12c7t8",
+   "title": "الثنائي pn",
+   "page": "211",
+   "sec": "7-8",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c7t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c7.js",
+   "topicId": "p12c7t9",
+   "title": "بعض أنواع الثنائيات",
+   "page": "214",
+   "sec": "7-9",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c7t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c7.js",
+   "topicId": "p12c7t10",
+   "title": "الترانزستور",
+   "page": "217",
+   "sec": "7-10",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c7t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c9.js",
+   "topicId": "p12c9t1",
+   "title": "مقدمة",
+   "page": "255",
+   "sec": "9-1",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c9t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c9.js",
+   "topicId": "p12c9t2",
+   "title": "التركيب النووي",
+   "page": "257",
+   "sec": "9-2",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c9t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c9.js",
+   "topicId": "p12c9t3",
+   "title": "العدد الذري والعدد الكتلي",
+   "page": "259",
+   "sec": "9-3",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c9t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c9.js",
+   "topicId": "p12c9t4",
+   "title": "النظائر",
+   "page": "261",
+   "sec": "9-4",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c9t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c9.js",
+   "topicId": "p12c9t5",
+   "title": "طاقة الربط النووية",
+   "page": "263",
+   "sec": "9-5",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c9t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c9.js",
+   "topicId": "p12c9t6",
+   "title": "النشاط الإشعاعي",
+   "page": "265",
+   "sec": "9-6",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c9t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c9.js",
+   "topicId": "p12c9t7",
+   "title": "التفاعلات النووية",
+   "page": "269",
+   "sec": "9-7",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c9t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c9.js",
+   "topicId": "p12c9t8",
+   "title": "انشطار نووي",
+   "page": "271",
+   "sec": "9-8",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c9t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c9.js",
+   "topicId": "p12c9t9",
+   "title": "اندماج نووي",
+   "page": "273",
+   "sec": "9-9",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c9t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الفيزياء",
+   "file": "physics-12-c9.js",
+   "topicId": "p12c9t10",
+   "title": "مخاطر وفوائد الإشعاع النووي",
+   "page": "275",
+   "sec": "9-10",
+   "status": "need_new_fig",
+   "figKey": "fig_p12c9t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t1",
+   "title": "مقدمة",
+   "page": "10",
+   "sec": "1-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t2",
+   "title": "وحدات الطاقة ودرجة الحرارة",
+   "page": "11",
+   "sec": "2-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t3",
+   "title": "بعض المصطلحات الثرموداينمكية",
+   "page": "11–12",
+   "sec": "3-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t4",
+   "title": "الحرارة",
+   "page": "12–14",
+   "sec": "4-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t5",
+   "title": "حرارة التفاعل (التغير في الانثالبي)",
+   "page": "14–15",
+   "sec": "5-1",
+   "status": "has_working_fig",
+   "figKey": "energyProfile",
+   "existingRefs": [
+    "energyProfile"
+   ]
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t6",
+   "title": "دالة الحالة",
+   "page": "15",
+   "sec": "6-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t7",
+   "title": "الخواص العامة للمواد",
+   "page": "16",
+   "sec": "7-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t8",
+   "title": "الكيمياء الحرارية",
+   "page": "16–17",
+   "sec": "8-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t9",
+   "title": "قياس انثالبي التفاعل",
+   "page": "17–19",
+   "sec": "9-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t10",
+   "title": "المعادلة الكيميائية الحرارية",
+   "page": "19–21",
+   "sec": "10-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t11",
+   "title": "انثالبي التفاعل القياسية",
+   "page": "21",
+   "sec": "11-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t11",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t12",
+   "title": "انواع الانثالبيات",
+   "page": "22–27",
+   "sec": "12-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t12",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t13",
+   "title": "طرائق حساب انثالبي التفاعل القياسية",
+   "page": "27–31",
+   "sec": "13-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t13",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t14",
+   "title": "العمليات التلقائية",
+   "page": "32–33",
+   "sec": "14-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t14",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t15",
+   "title": "الانتروبي",
+   "page": "34–38",
+   "sec": "15-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t15",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t16",
+   "title": "طاقة كبس الحرة",
+   "page": "39–44",
+   "sec": "16-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t16",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c1.js",
+   "topicId": "k12c1t17",
+   "title": "حساب انتروبي التغيرات الفيزيائية",
+   "page": "44–45",
+   "sec": "17-1",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c1t17",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c2.js",
+   "topicId": "k12c2t1",
+   "title": "التفاعلات غير الانعكاسية والانعكاسية",
+   "page": "52–54",
+   "sec": "1-2",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c2t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c2.js",
+   "topicId": "k12c2t2",
+   "title": "التفاعلات الانعكاسية وحالة الاتزان",
+   "page": "54",
+   "sec": "2-2",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c2t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c2.js",
+   "topicId": "k12c2t3",
+   "title": "التفاعلات الانعكاسية المتجانسة وغير المتجانسة",
+   "page": "54–55",
+   "sec": "3-2",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c2t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c2.js",
+   "topicId": "k12c2t4",
+   "title": "حالة الاتزان وقانون فعل الكتلة",
+   "page": "55–56",
+   "sec": "4-2",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c2t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c2.js",
+   "topicId": "k12c2t5",
+   "title": "ثابت الاتزان",
+   "page": "56–60",
+   "sec": "5-2",
+   "status": "has_working_fig",
+   "figKey": "equilK",
+   "existingRefs": [
+    "equilK"
+   ]
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c2.js",
+   "topicId": "k12c2t6",
+   "title": "حساب ثابت الاتزان Keq",
+   "page": "60–64",
+   "sec": "6-2",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c2t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c2.js",
+   "topicId": "k12c2t7",
+   "title": "العلاقة بين ثابتي الاتزان Kc و Kp",
+   "page": "65–66",
+   "sec": "7-2",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c2t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c2.js",
+   "topicId": "k12c2t8",
+   "title": "أهمية ثابت الاتزان",
+   "page": "66–69",
+   "sec": "8-2",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c2t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c2.js",
+   "topicId": "k12c2t9",
+   "title": "حاصل التفاعل Q",
+   "page": "70–71",
+   "sec": "9-2",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c2t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c2.js",
+   "topicId": "k12c2t10",
+   "title": "العلاقة بين الطاقة الحرة ΔG وقيمة ثابت الاتزان Keq",
+   "page": "71–73",
+   "sec": "10-2",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c2t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c2.js",
+   "topicId": "k12c2t11",
+   "title": "قاعدة لو شاتليه",
+   "page": "73–77",
+   "sec": "11-2",
+   "status": "has_working_fig",
+   "figKey": "leChatelier",
+   "existingRefs": [
+    "leChatelier"
+   ]
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c2.js",
+   "topicId": "k12c2t12",
+   "title": "العوامل المؤثرة على قيمة ثابت الاتزان",
+   "page": "77–78",
+   "sec": "12-2",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c2t12",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c3.js",
+   "topicId": "k12c3t1",
+   "title": "مقدمة",
+   "page": "87–88",
+   "sec": "1-3",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c3t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c3.js",
+   "topicId": "k12c3t2",
+   "title": "المواد الالكتروليتية والمواد غير الالكتروليتية",
+   "page": "88–92",
+   "sec": "2-3",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c3t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c3.js",
+   "topicId": "k12c3t3",
+   "title": "تفكك الالكتروليتات الضعيفة",
+   "page": "92–101",
+   "sec": "3-3",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c3t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c3.js",
+   "topicId": "k12c3t4",
+   "title": "التأين الذاتي للماء",
+   "page": "101–104",
+   "sec": "4-3",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c3t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c3.js",
+   "topicId": "k12c3t5",
+   "title": "الأس الهيدروجيني",
+   "page": "104–106",
+   "sec": "5-3",
+   "status": "has_working_fig",
+   "figKey": "phScale",
+   "existingRefs": [
+    "phScale"
+   ]
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c3.js",
+   "topicId": "k12c3t6",
+   "title": "التمذوب",
+   "page": "106–113",
+   "sec": "6-3",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c3t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c3.js",
+   "topicId": "k12c3t7",
+   "title": "تأثير الأيون المشترك",
+   "page": "113–115",
+   "sec": "7-3",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c3t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c3.js",
+   "topicId": "k12c3t8",
+   "title": "المحاليل المنظمة (محاليل بفر)",
+   "page": "115–121",
+   "sec": "8-3",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c3t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c3.js",
+   "topicId": "k12c3t9",
+   "title": "الذوبانية وثابت حاصل الذوبان",
+   "page": "121–132",
+   "sec": "9-3",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c3t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c4.js",
+   "topicId": "k12c4t1",
+   "title": "مقدمة",
+   "page": "133–134",
+   "sec": "1-4",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c4t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c4.js",
+   "topicId": "k12c4t2",
+   "title": "أعداد التأكسد",
+   "page": "134–135",
+   "sec": "2-4",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c4t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c4.js",
+   "topicId": "k12c4t3",
+   "title": "تفاعلات التأكسد والاختزال",
+   "page": "135–138",
+   "sec": "3-4",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c4t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c4.js",
+   "topicId": "k12c4t4",
+   "title": "العوامل المؤكسدة والعوامل المختزلة",
+   "page": "139–140",
+   "sec": "4-4",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c4t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c4.js",
+   "topicId": "k12c4t5",
+   "title": "الخلايا الكهروكيميائية",
+   "page": "140",
+   "sec": "5-4",
+   "status": "has_working_fig",
+   "figKey": "danielCell",
+   "existingRefs": [
+    "danielCell"
+   ]
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c4.js",
+   "topicId": "k12c4t6",
+   "title": "الخلايا الكلفانية",
+   "page": "140–144",
+   "sec": "6-4",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c4t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c4.js",
+   "topicId": "k12c4t7",
+   "title": "جهد الخلية الكلفانية",
+   "page": "144–158",
+   "sec": "7-4",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c4t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c4.js",
+   "topicId": "k12c4t8",
+   "title": "الخلايا الالكتروليتية",
+   "page": "158–160",
+   "sec": "8-4",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c4t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c4.js",
+   "topicId": "k12c4t9",
+   "title": "قوانين فاراداي",
+   "page": "160–163",
+   "sec": "9-4",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c4t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c4.js",
+   "topicId": "k12c4t10",
+   "title": "البطاريات (النضائد) وخلايا الوقود",
+   "page": "163–168",
+   "sec": "10-4",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c4t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c5.js",
+   "topicId": "k12c5t1",
+   "title": "مقدمة",
+   "page": "170",
+   "sec": "1-5",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c5t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c5.js",
+   "topicId": "k12c5t2",
+   "title": "الملح المزدوج والمركب التناسقي",
+   "page": "171–172",
+   "sec": "2-5",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c5t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c5.js",
+   "topicId": "k12c5t3",
+   "title": "تطور الكيمياء التناسقية",
+   "page": "173–180",
+   "sec": "3-5",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c5t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c5.js",
+   "topicId": "k12c5t4",
+   "title": "انواع الليكندات",
+   "page": "181",
+   "sec": "4-5",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c5t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c5.js",
+   "topicId": "k12c5t5",
+   "title": "قاعدة العدد الذري الفعال",
+   "page": "182–183",
+   "sec": "5-5",
+   "status": "has_working_fig",
+   "figKey": "atomBohr",
+   "existingRefs": [
+    "atomBohr"
+   ]
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c5.js",
+   "topicId": "k12c5t6",
+   "title": "تسمية المركبات التناسقية",
+   "page": "184–186",
+   "sec": "6-5",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c5t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c5.js",
+   "topicId": "k12c5t7",
+   "title": "نظريات التآصر في المركبات التناسقية",
+   "page": "187–192",
+   "sec": "7-5",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c5t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c5.js",
+   "topicId": "k12c5t8",
+   "title": "الأعداد التناسقية والأشكال الهندسية المتوقعة (للاِطِّلاع)",
+   "page": "193",
+   "sec": "8-5",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c5t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c6.js",
+   "topicId": "k12c6t1",
+   "title": "مقدمة",
+   "page": "197–198",
+   "sec": "1-6",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c6t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c6.js",
+   "topicId": "k12c6t2",
+   "title": "التحليل الوصفي (النوعي)",
+   "page": "198–200",
+   "sec": "2-6",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c6t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c6.js",
+   "topicId": "k12c6t3",
+   "title": "التحليل الكمي",
+   "page": "200–202",
+   "sec": "3-6",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c6t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c6.js",
+   "topicId": "k12c6t4",
+   "title": "التحليل الوزني",
+   "page": "202–205",
+   "sec": "4-6",
+   "status": "has_working_fig",
+   "figKey": "labFunnel",
+   "existingRefs": [
+    "labFunnel"
+   ]
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c6.js",
+   "topicId": "k12c6t5",
+   "title": "طريقة الترسيب",
+   "page": "205–211",
+   "sec": "5-6",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c6t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c6.js",
+   "topicId": "k12c6t6",
+   "title": "التحليل الحجمي",
+   "page": "211–225",
+   "sec": "6-6",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c6t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c7.js",
+   "topicId": "k12c7t1",
+   "title": "مقدمة والمجاميع الوظيفية",
+   "page": "231–233",
+   "sec": "1-7",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c7t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c7.js",
+   "topicId": "k12c7t2",
+   "title": "هاليدات الالكيل: التعريف والتصنيف",
+   "page": "233–234",
+   "sec": "2-7",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c7t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c7.js",
+   "topicId": "k12c7t3",
+   "title": "تسمية هاليدات الالكيل وتحضيرها",
+   "page": "234–237",
+   "sec": "1-2-7 و 2-2-7",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c7t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c7.js",
+   "topicId": "k12c7t4",
+   "title": "خواص هاليدات الالكيل",
+   "page": "237–238",
+   "sec": "3-2-7",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c7t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c7.js",
+   "topicId": "k12c7t5",
+   "title": "الكحوالت: التعريف والتصنيف والتسمية والتحضير",
+   "page": "239–241",
+   "sec": "3-7 و 1-3-7 و 2-3-7",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c7t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c7.js",
+   "topicId": "k12c7t6",
+   "title": "خواص الكحوالت",
+   "page": "242–244",
+   "sec": "3-3-7",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c7t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c7.js",
+   "topicId": "k12c7t7",
+   "title": "الايثرات",
+   "page": "245–248",
+   "sec": "4-7 و 1-4-7 و 2-4-7 و 3-4-7",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c7t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c7.js",
+   "topicId": "k12c7t8",
+   "title": "الالديهايدات والكيتونات: التسمية والتحضير",
+   "page": "248–251",
+   "sec": "5-7",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c7t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c7.js",
+   "topicId": "k12c7t9",
+   "title": "خواص الالديهايدات والكيتونات",
+   "page": "252–255",
+   "sec": "3-5-7",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c7t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c7.js",
+   "topicId": "k12c7t10",
+   "title": "الحوامض الكاربوكسيلية",
+   "page": "255–259",
+   "sec": "6-7",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c7t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c7.js",
+   "topicId": "k12c7t11",
+   "title": "الاسترات والأمينات",
+   "page": "259–264",
+   "sec": "7-7 و8-7",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c7t11",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c8.js",
+   "topicId": "k12c8t1",
+   "title": "مقدمة",
+   "page": "269",
+   "sec": "1-8",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c8t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c8.js",
+   "topicId": "k12c8t2",
+   "title": "الكاربوهيدرات وتركيبها",
+   "page": "270",
+   "sec": "2-8 و 1-2-8",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c8t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c8.js",
+   "topicId": "k12c8t3",
+   "title": "أصناف الكاربوهيدرات والسكريات الأحادية",
+   "page": "271–272",
+   "sec": "2-2-8 (1)",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c8t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c8.js",
+   "topicId": "k12c8t4",
+   "title": "السكريات الثنائية والمتعددة",
+   "page": "273–274",
+   "sec": "2-2-8 (2 و 3)",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c8t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c8.js",
+   "topicId": "k12c8t5",
+   "title": "الكشف عن النشأ",
+   "page": "274",
+   "sec": "3-2-8",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c8t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c8.js",
+   "topicId": "k12c8t6",
+   "title": "البروتينات وعناصرها وأحماضها الأمينية",
+   "page": "274–275",
+   "sec": "3-8 و 1-3-8 و 2-3-8",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c8t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c8.js",
+   "topicId": "k12c8t7",
+   "title": "تكوين البروتين وتفاعلاته الأساسية",
+   "page": "276–277",
+   "sec": "3-3-8 و 4-3-8",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c8t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c8.js",
+   "topicId": "k12c8t8",
+   "title": "الأنزيمات",
+   "page": "277",
+   "sec": "4-8",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c8t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c8.js",
+   "topicId": "k12c8t9",
+   "title": "الدهون (اللبيدات)",
+   "page": "278",
+   "sec": "5-8",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c8t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الكيمياء",
+   "file": "chemistry-12-c8.js",
+   "topicId": "k12c8t10",
+   "title": "الصابون",
+   "page": "279",
+   "sec": "6-8",
+   "status": "need_new_fig",
+   "figKey": "fig_k12c8t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c1.js",
+   "topicId": "b12c1t1",
+   "title": "مقدمة، النظرية الخلوية، حجم الخلية",
+   "page": "7–9",
+   "sec": "1-1 / 1-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c1t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c1.js",
+   "topicId": "b12c1t2",
+   "title": "الخلية بدائية النواة، جدار الخلية والغشاء البلازمي",
+   "page": "10–15",
+   "sec": "1-4 / 1-5-1",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c1t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c1.js",
+   "topicId": "b12c1t3",
+   "title": "العضيات: الشبكة البلازمية، كولجي، المايتوكوندريا، البلاستيدات",
+   "page": "15–19",
+   "sec": "1-5-2 (1–4)",
+   "status": "fix_broken_fig",
+   "figKey": "carbonPhotosynthesis",
+   "existingRefs": [
+    "carbonPhotosynthesis",
+    "photosynthesis"
+   ]
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c1.js",
+   "topicId": "b12c1t4",
+   "title": "الجسيمات الحالة، هيكل الخلية، الجسم الحركي، الفجوات والمحتويات غير الحية",
+   "page": "19–22",
+   "sec": "1-5-2 (5–8)",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c1t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c1.js",
+   "topicId": "b12c1t5",
+   "title": "النواة والمقارنة بين الخلية النباتية والحيوانية",
+   "page": "22–25",
+   "sec": "1-5-3",
+   "status": "has_working_fig",
+   "figKey": "plantCell",
+   "existingRefs": [
+    "plantCell",
+    "animalCell"
+   ]
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c1.js",
+   "topicId": "b12c1t6",
+   "title": "عبور المواد عبر الأغشية",
+   "page": "26–29",
+   "sec": "1-6 أولًا",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c1t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c1.js",
+   "topicId": "b12c1t7",
+   "title": "الأيض الخلوي والتنفس",
+   "page": "29–33",
+   "sec": "1-6 ثانيًا",
+   "status": "fix_broken_fig",
+   "figKey": "cellularRespiration",
+   "existingRefs": [
+    "cellularRespiration"
+   ]
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c1.js",
+   "topicId": "b12c1t8",
+   "title": "الانقسام المباشر والانقسام الخيطي",
+   "page": "34–36",
+   "sec": "1-7-1 / 1-7-2",
+   "status": "fix_broken_fig",
+   "figKey": "cellReproCycle",
+   "existingRefs": [
+    "cellReproCycle"
+   ]
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c1.js",
+   "topicId": "b12c1t9",
+   "title": "الانقسام الاختزالي",
+   "page": "36–42",
+   "sec": "1-7-3",
+   "status": "fix_broken_fig",
+   "figKey": "cellReproCycle",
+   "existingRefs": [
+    "cellReproCycle"
+   ]
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c2.js",
+   "topicId": "b12c2t1",
+   "title": "مقدمة",
+   "page": "50",
+   "sec": "2-1",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c2t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c2.js",
+   "topicId": "b12c2t2",
+   "title": "الأنسجة النباتية",
+   "page": "51–58",
+   "sec": "2-2",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c2t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c2.js",
+   "topicId": "b12c2t3",
+   "title": "الأنسجة الحيوانية",
+   "page": "59–81",
+   "sec": "2-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c2t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c3.js",
+   "topicId": "b12c3t1",
+   "title": "مقدمة",
+   "page": "88",
+   "sec": "1-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c3t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c3.js",
+   "topicId": "b12c3t2",
+   "title": "مفهوم التكاثر ودوره في الكائنات الحية",
+   "page": "89",
+   "sec": "2-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c3t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c3.js",
+   "topicId": "b12c3t3",
+   "title": "أنواع التكاثر",
+   "page": "89–92",
+   "sec": "3-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c3t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c3.js",
+   "topicId": "b12c3t4",
+   "title": "التكاثر في الفيروسات",
+   "page": "92–93",
+   "sec": "4-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c3t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c3.js",
+   "topicId": "b12c3t5",
+   "title": "التكاثر في البدائيات",
+   "page": "94–96",
+   "sec": "5-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c3t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c3.js",
+   "topicId": "b12c3t6",
+   "title": "التكاثر في الطليعيات",
+   "page": "97–100",
+   "sec": "6-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c3t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c3.js",
+   "topicId": "b12c3t7",
+   "title": "التكاثر في الفطريات",
+   "page": "101–102",
+   "sec": "7-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c3t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c3.js",
+   "topicId": "b12c3t8",
+   "title": "التكاثر في النباتات",
+   "page": "102–118",
+   "sec": "8-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c3t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c3.js",
+   "topicId": "b12c3t9",
+   "title": "التكاثر في الحيوانات",
+   "page": "118–123",
+   "sec": "9-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c3t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c3.js",
+   "topicId": "b12c3t10",
+   "title": "التكاثر العذري",
+   "page": "133",
+   "sec": "10-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c3t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c3.js",
+   "topicId": "b12c3t11",
+   "title": "التكاثر الخنثي",
+   "page": "133",
+   "sec": "11-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c3t11",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c4.js",
+   "topicId": "b12c4t1",
+   "title": "مقدمة",
+   "page": "141",
+   "sec": "4-1",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c4t1",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c4.js",
+   "topicId": "b12c4t2",
+   "title": "مفهوم النمو",
+   "page": "142",
+   "sec": "4-2",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c4t2",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c4.js",
+   "topicId": "b12c4t3",
+   "title": "مفهوم التمايز الخلوي",
+   "page": "142",
+   "sec": "4-3",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c4t3",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c4.js",
+   "topicId": "b12c4t4",
+   "title": "مستويات التعضي في تعقيد الحيوان",
+   "page": "143–144",
+   "sec": "4-4",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c4t4",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c4.js",
+   "topicId": "b12c4t5",
+   "title": "مفهوم التكوين الجنيني",
+   "page": "144–149",
+   "sec": "4-5",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c4t5",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c4.js",
+   "topicId": "b12c4t6",
+   "title": "التشوهات الجنينية في الإنسان",
+   "page": "149–151",
+   "sec": "4-6",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c4t6",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c4.js",
+   "topicId": "b12c4t7",
+   "title": "تعدد المواليد وتكوين التوائم",
+   "page": "151–153",
+   "sec": "4-7",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c4t7",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c4.js",
+   "topicId": "b12c4t8",
+   "title": "المباعدة بين الولادات",
+   "page": "154",
+   "sec": "4-8",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c4t8",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c4.js",
+   "topicId": "b12c4t9",
+   "title": "الخلايا الجذعية الجنينية",
+   "page": "154–156",
+   "sec": "4-9",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c4t9",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c4.js",
+   "topicId": "b12c4t10",
+   "title": "الاستنساخ في الحيوان",
+   "page": "156–157",
+   "sec": "4-10",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c4t10",
+   "existingRefs": []
+  },
+  {
+   "subject": "الأحياء",
+   "file": "biology-12-c4.js",
+   "topicId": "b12c4t11",
+   "title": "تقانات في علاج العقم",
+   "page": "158–159",
+   "sec": "4-11",
+   "status": "need_new_fig",
+   "figKey": "fig_b12c4t11",
+   "existingRefs": []
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+title>التداخل الموجي</title>
+<style>
+:root{--bg:#f4f1ea;--ink:#27231d;--muted:#8a8172;--acc:#2f7d5b;--soft:#efe9dd;--line:#e4ded2;--card:#fff;--bad:#c0563f;--gold:#d8a53a}
+*{box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:10px}
+.eq{text-align:center;font-size:15px;font-weight:700;color:var(--acc);margin:0 0 8px}
+canvas{display:block;margin:0 auto;border-radius:12px;background:var(--card);border:1px solid var(--line)}
+.ctrl{display:flex;justify-content:center;gap:10px;margin:8px 0;flex-wrap:wrap}
+.param{display:flex;align-items:center;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 8px}
+.param label{font-size:13px;font-weight:700;color:var(--acc);min-width:16px;text-align:center}
+.param input{width:56px;border:1px solid var(--line);border-radius:6px;padding:4px;font-size:13px;text-align:center;font-family:inherit}
+.param button{min-width:32px;min-height:32px;border:0;border-radius:6px;background:var(--soft);cursor:pointer;font-size:14px;font-family:inherit;line-height:1}
+.info{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:8px;padding:0 8px}
+.info b{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="eq" id="eqLabel">الموجتان والمحصلة (التداخل البنّاء والهدام)</div>
+<canvas id="cv" width="340" height="270"></canvas>
+<div class="ctrl">
+  <div class="param"><label>A₁</label><input id="iA1" value="1"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>A₂</label><input id="iA2" value="1"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>λ</label><input id="il" value="2"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>φ</label><input id="ip" value="0"><button class="up">▲</button><button class="dn">▼</button></div>
+</div>
+<div class="info" id="infoBar"></div>
+<script>
+const INK='#27231d',MUTED='#8a8172',ACC='#2f7d5b',BAD='#c0563f',GOLD='#d8a53a',LINE='#e4ded2',CARD='#fff';
+const P={A1:1,A2:1,L:2,phi:0,sA:0.1,sL:0.1,sP:15};
+const cv=document.getElementById('cv'),ct=cv.getContext('2d');
+const W=cv.width,H=cv.height;
+const px=function(v){return Math.round(v*100)/100;};
+function adj(k,d){P[k]=px(P[k]+d);if(k==='A1'&&P[k]<0.1)P[k]=0.1;if(k==='A1'&&P[k]>2)P[k]=2;if(k==='A2'&&P[k]<0.1)P[k]=0.1;if(k==='A2'&&P[k]>2)P[k]=2;if(k==='L'&&P[k]<0.5)P[k]=0.5;if(k==='L'&&P[k]>4)P[k]=4;if(k==='phi'&&P[k]<0)P[k]=0;if(k==='phi'&&P[k]>360)P[k]=360;sync();draw();}
+function sync(){document.getElementById('iA1').value=P.A1;document.getElementById('iA2').value=P.A2;document.getElementById('il').value=P.L;document.getElementById('ip').value=P.phi;}
+document.querySelectorAll('.param').forEach(function(p){
+  var k=p.querySelector('label').textContent,inp=p.querySelector('input'),bs=p.querySelectorAll('button');
+  bs[0].onclick=function(){adj(k,k==='A1'||k==='A2'?P.sA:k==='L'?P.sL:P.sP);};
+  bs[1].onclick=function(){adj(k,-(k==='A1'||k==='A2'?P.sA:k==='L'?P.sL:P.sP));};
+  inp.onchange=function(){var v=parseFloat(inp.value);if(!isNaN(v)){adj(k,v);}};
+});
+function draw(){
+  ct.clearRect(0,0,W,H);
+  var A1=P.A1,A2=P.A2,L=P.L,phi=P.phi*Math.PI/180;
+  var xmax=4*L;
+  var ymax=Math.max(2.5,A1+A2+0.6);
+  var ox=50,oy=H/2;
+  var sx=(W-100)/xmax,sy=(H-100)/(2*ymax);
+  function mx(x){return ox+x*sx;}
+  function my(y){return oy-y*sy;}
+  // axis
+  ct.strokeStyle=INK;ct.lineWidth=1.4;
+  ct.beginPath();ct.moveTo(mx(0),my(0));ct.lineTo(mx(xmax),my(0));ct.stroke();
+  ct.beginPath();ct.moveTo(mx(0),my(-ymax));ct.lineTo(mx(0),my(ymax));ct.stroke();
+  ct.fillStyle=INK;ct.font='12px system-ui';ct.textAlign='end';ct.fillText('س',W-6,my(0)-6);
+  ct.textAlign='center';ct.fillText('ص',34,30);
+  // zero line dashed
+  ct.strokeStyle=MUTED;ct.lineWidth=1;ct.setLineDash([4,4]);
+  ct.beginPath();ct.moveTo(mx(0),my(0));ct.lineTo(mx(xmax),my(0));ct.stroke();ct.setLineDash([]);
+  // draw a polyline helper
+  function polyline(color,fn){
+    ct.strokeStyle=color;ct.lineWidth=1.8;ct.beginPath();
+    var first=true,x;
+    for(x=0;x<=xmax;x+=0.08){var y=fn(x);if(first){ct.moveTo(mx(x),my(y));first=false;}else ct.lineTo(mx(x),my(y));}
+    ct.stroke();
+  }
+  polyline(ACC,function(x){return P.A1*Math.sin(2*Math.PI*x/P.L);});
+  polyline(BAD,function(x){return P.A2*Math.sin(2*Math.PI*x/P.L+phi);});
+  polyline(INK,function(x){return P.A1*Math.sin(2*Math.PI*x/P.L)+P.A2*Math.sin(2*Math.PI*x/P.L+phi);});
+  // resultant amplitude
+  var Atot=Math.sqrt(A1*A1+A2*A2+2*A1*A2*Math.cos(phi));
+  var kind = Math.abs(phi)<0.3||Math.abs(phi-2*Math.PI)<0.3?'بنّاء تام':(Math.abs(phi-Math.PI)<0.3?'هدام تام':(phi<Math.PI?'بنّاء جزئي':'هدام جزئي'));
+  document.getElementById('eqLabel').textContent='الموجتان والمحصلة (التداخل البنّاء والهدام)';
+  document.getElementById('infoBar').innerHTML='<b>السعة المحصلة =</b> '+Atot.toFixed(2)+' &nbsp; <b>النوع:</b> '+kind+' &nbsp; <b>φ =</b> '+P.phi+'°';
+}
+draw();
+</script>
+</body>
+</html>

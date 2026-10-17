@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+title>المشتق والمماس</title>
+<style>
+:root{--bg:#f4f1ea;--ink:#27231d;--muted:#8a8172;--acc:#2f7d5b;--soft:#efe9dd;--line:#e4ded2;--card:#fff;--bad:#c0563f;--gold:#d8a53a}
+*{box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:10px}
+.eq{text-align:center;font-size:15px;font-weight:700;color:var(--acc);margin:0 0 8px}
+canvas{display:block;margin:0 auto;border-radius:12px;background:var(--card);border:1px solid var(--line)}
+.ctrl{display:flex;justify-content:center;gap:10px;margin:8px 0;flex-wrap:wrap}
+.param{display:flex;align-items:center;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 8px}
+.param label{font-size:13px;font-weight:700;color:var(--acc);min-width:16px;text-align:center}
+.param input{width:56px;border:1px solid var(--line);border-radius:6px;padding:4px;font-size:13px;text-align:center;font-family:inherit}
+.param button{min-width:32px;min-height:32px;border:0;border-radius:6px;background:var(--soft);cursor:pointer;font-size:14px;font-family:inherit;line-height:1}
+.info{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:8px;padding:0 8px}
+.info b{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="eq" id="eqLabel">f(x) = a₃x³ + a₂x² + a₁x + a₀</div>
+<canvas id="cv" width="330" height="270"></canvas>
+<div class="ctrl">
+  <div class="param"><label>a₃</label><input id="ia3" value="0.1"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>a₂</label><input id="ia2" value="-0.5"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>a₁</label><input id="ia1" value="1"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>a₀</label><input id="ia0" value="0"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>x₀</label><input id="ix0" value="0"><button class="up">▲</button><button class="dn">▼</button></div>
+</div>
+<div class="info" id="infoBar"></div>
+<script>
+const INK='#27231d',MUTED='#8a8172',ACC='#2f7d5b',BAD='#c0563f',GOLD='#d8a53a',LINE='#e4ded2',CARD='#fff';
+const P={a3:0.1,a2:-0.5,a1:1,a0:0,x0:0,sa:0.5,sx:0.5};
+const cv=document.getElementById('cv'),ct=cv.getContext('2d');
+const W=cv.width,H=cv.height;
+const px=function(v){return Math.round(v*100)/100;};
+function f(x){return P.a3*x*x*x+P.a2*x*x+P.a1*x+P.a0;}
+function fp(x){return 3*P.a3*x*x+2*P.a2*x+P.a1;}
+function adj(k,d){P[k]=px(P[k]+d);sync();draw();}
+function sync(){document.getElementById('ia3').value=P.a3;document.getElementById('ia2').value=P.a2;document.getElementById('ia1').value=P.a1;document.getElementById('ia0').value=P.a0;document.getElementById('ix0').value=P.x0;}
+document.querySelectorAll('.param').forEach(function(p){
+  var k=p.querySelector('label').textContent,inp=p.querySelector('input'),bs=p.querySelectorAll('button');
+  bs[0].onclick=function(){adj(k,k==='x0'?P.sx:P.sa);};
+  bs[1].onclick=function(){adj(k,-(k==='x0'?P.sx:P.sa));};
+  inp.onchange=function(){var v=parseFloat(inp.value);if(!isNaN(v)){P[k]=px(v);sync();draw();}};
+});
+function mx(x){return W/2+x*((W-60)/10);}
+function my(y){return H/2-y*((H-60)/12);}
+function draw(){
+  ct.clearRect(0,0,W,H);
+  var ymin=1e9,ymax=-1e9,x;
+  for(x=-5;x<=5;x+=0.05){var y=f(x);if(y<ymin)ymin=y;if(y>ymax)ymax=y;}
+  var pad=(ymax-ymin)*0.15||5;ymin-=pad;ymax+=pad;
+  if(ymin>0)ymin=0;if(ymax<0)ymax=0;
+  ct.strokeStyle=INK;ct.lineWidth=1.4;
+  ct.beginPath();ct.moveTo(mx(-5),my(0));ct.lineTo(mx(5),my(0));ct.stroke();
+  ct.beginPath();ct.moveTo(mx(0),my(ymin));ct.lineTo(mx(0),my(ymax));ct.stroke();
+  ct.fillStyle=INK;ct.font='12px system-ui';ct.textAlign='end';ct.fillText('س',W-8,my(0)-6);
+  ct.textAlign='center';ct.fillText('ص',28,30);
+  // curve
+  ct.strokeStyle=ACC;ct.lineWidth=2.2;ct.beginPath();
+  var first=true;
+  for(x=-5;x<=5;x+=0.05){var sx=mx(x),sy=my(f(x));if(first){ct.moveTo(sx,sy);first=false;}else ct.lineTo(sx,sy);}
+  ct.stroke();
+  // tangent point
+  var x0=P.x0,y0=f(x0),m=fp(x0),n=y0-m*x0;
+  ct.fillStyle=BAD;ct.beginPath();ct.arc(mx(x0),my(y0),5,0,Math.PI*2);ct.fill();
+  // tangent line
+  ct.strokeStyle=BAD;ct.lineWidth=2;ct.beginPath();ct.moveTo(mx(-5),my(m*(-5)+n));ct.lineTo(mx(5),my(m*5+n));ct.stroke();
+  ct.fillStyle=INK;ct.font='12px system-ui';ct.textAlign='center';
+  ct.fillText('x₀ = '+x0.toFixed(2),mx(x0),my(y0)-12);
+  var eq = 'y = '+m.toFixed(2)+'x '+(n>=0?'+ ':'- ')+Math.abs(n).toFixed(2);
+  document.getElementById('eqLabel').textContent='f(x) = '+P.a3+'x³ + '+P.a2+'x² + '+P.a1+'x + '+P.a0;
+  document.getElementById('infoBar').innerHTML='<b>f(x₀) =</b> '+y0.toFixed(2)+' &nbsp; <b>f\'(x₀) =</b> '+m.toFixed(2)+' &nbsp; <b>المماس:</b> '+eq;
+}
+draw();
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-label="المعدلات المرتبطة في التفاضل">
+  <text x="150" y="30" text-anchor="middle" font-size="13" fill="#2f7d5b" font-weight="700">المعدلات المرتبطة (Related Rates)</text>
+  <rect x="40" y="60" width="90" height="36" rx="6" fill="#d7ebe0" stroke="#1a5c3a" stroke-width="2"/>
+  <text x="85" y="84" text-anchor="middle" font-size="11" fill="#1a5c3a">دائرة نصف قطرها r</text>
+  <rect x="170" y="60" width="90" height="36" rx="6" fill="#fa0d4" stroke="#8a3020" stroke-width="2"/>
+  <text x="215" y="84" text-anchor="middle" font-size="11" fill="#8a3020">المساحة A = πr²</text>
+  <line x1="130" y1="78" x2="170" y2="78" stroke="#555" stroke-width="2" marker-end="url(#figArrow_math)"/>
+  <text x="150" y="108" text-anchor="middle" font-size="10" fill="#555">dA/dt = 2πr · dr/dt</text>
+  <text x="150" y="186" text-anchor="middle" font-size="10" fill="#555">التفاضل يربط معدل تغير الأبعاد</text>
+</svg>

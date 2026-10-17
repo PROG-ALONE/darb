@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" role="img" aria-label="الدائرة المركز والنصف قطر والمحيط">
+  <!-- الدائرة -->
+  <circle cx="150" cy="110" r="60" fill="#d7ebe0" stroke="#2f7d5b" stroke-width="2.2"/>
+  <!-- المركز -->
+  <circle cx="150" cy="110" r="4" fill="#555"/>
+  <!-- النصف قطر -->
+  <line x1="150" y1="110" x2="210" y2="110" stroke="#c0563f" stroke-width="2" marker-end="url(#figArrow_math)"/>
+  <text x="182" y="102" text-anchor="middle" font-size="11" fill="#c0563f">r</text>
+  <!-- القطر -->
+  <line x1="90" y1="110" x2="210" y2="110" stroke="#d8a53a" stroke-width="1.8" stroke-dasharray="5,4"/>
+  <text x="150" y="102" text-anchor="middle" font-size="11" fill="#d8a53a">d = 2r</text>
+  <text x="150" y="210" text-anchor="middle" font-size="10" fill="#555">المحيط = 2πr ، المساحة = πr²</text>
+</svg>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>القطع الزائد</title>
+<style>
+:root{--bg:#f4f1ea;--ink:#27231d;--muted:#8a8172;--acc:#2f7d5b;--soft:#efe9dd;--line:#e4ded2;--card:#fff;--bad:#c0563f;--gold:#d8a53a}
+*{box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:10px}
+.eq{text-align:center;font-size:15px;font-weight:700;color:var(--acc);margin:0 0 8px}
+canvas{display:block;margin:0 auto;border-radius:12px;background:var(--card);border:1px solid var(--line)}
+.ctrl{display:flex;justify-content:center;gap:10px;margin:8px 0;flex-wrap:wrap}
+.param{display:flex;align-items:center;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 8px}
+.param label{font-size:13px;font-weight:700;color:var(--acc);min-width:16px;text-align:center}
+.param input{width:56px;border:1px solid var(--line);border-radius:6px;padding:4px;font-size:13px;text-align:center;font-family:inherit}
+.param button{min-width:32px;min-height:32px;border:0;border-radius:6px;background:var(--soft);cursor:pointer;font-size:14px;font-family:inherit;line-height:1}
+.info{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:8px;padding:0 8px}
+.info b{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="eq" id="eqLabel">(x-h)²/a² − (y-k)²/b² = 1</div>
+<canvas id="cv" width="330" height="270"></canvas>
+<div class="ctrl">
+  <div class="param"><label>a</label><input id="ia" value="2"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>b</label><input id="ib" value="1.5"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>h</label><input id="ih" value="0"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>k</label><input id="ik" value="0"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>النوع</label><button id="bt" style="min-width:64px">أفقي</button></div>
+</div>
+<div class="info" id="infoBar"></div>
+<script>
+const INK='#27231d',MUTED='#8a8172',ACC='#2f7d5b',BAD='#c0563f',GOLD='#d8a53a',LINE='#e4ded2',CARD='#fff';
+const P={a:2,b:1.5,h:0,k:0,sa:0.5,sb:1,horiz:true};
+const cv=document.getElementById('cv'),ct=cv.getContext('2d');
+const W=cv.width,H=cv.height;
+const px=function(v){return Math.round(v*100)/100;};
+function adj(k,d){P[k]=px(P[k]+d);if(P[k]<0.5)P[k]=0.5;sync();draw();}
+function toggle(){P.horiz=!P.horiz;document.getElementById('bt').textContent=P.horiz?'أفقي':'رأسي';draw();}
+function sync(){document.getElementById('ia').value=P.a;document.getElementById('ib').value=P.b;document.getElementById('ih').value=P.h;document.getElementById('ik').value=P.k;}
+document.querySelectorAll('.param').forEach(function(p){
+  var k=p.querySelector('label').textContent,inp=p.querySelector('input'),bs=p.querySelectorAll('button');
+  if(k==='النوع'){bs[0].onclick=toggle;return;}
+  bs[0].onclick=function(){adj(k,k==='a'||k==='b'?P.sa:P.sb);};
+  bs[1].onclick=function(){adj(k,-(k==='a'||k==='b'?P.sa:P.sb));};
+  inp.onchange=function(){var v=parseFloat(inp.value);if(!isNaN(v)){P[k]=px(v);if(P[k]<0.5)P[k]=0.5;sync();draw();}};
+});
+document.getElementById('bt').onclick=toggle;
+function mx(x){return W/2+(x-P.h)*((W-60)/14);}
+function my(y){return H/2-(y-P.k)*((H-60)/14);}
+function draw(){
+  ct.clearRect(0,0,W,H);
+  var c=Math.sqrt(P.a*P.a+P.b*P.b);
+  var f1x=P.h-c,f2x=P.h+c;
+  ct.strokeStyle=INK;ct.lineWidth=1.4;
+  ct.beginPath();ct.moveTo(mx(-7),my(0));ct.lineTo(mx(7),my(0));ct.stroke();
+  ct.beginPath();ct.moveTo(mx(0),my(-7));ct.lineTo(mx(0),my(7));ct.stroke();
+  ct.fillStyle=INK;ct.font='12px system-ui';ct.textAlign='end';ct.fillText('س',W-8,my(0)-6);
+  ct.textAlign='center';ct.fillText('ص',28,28);
+  ct.fillStyle=ACC;ct.beginPath();ct.arc(mx(0),my(0),4,0,Math.PI*2);ct.fill();
+  var branch=function(sign){
+    ct.beginPath();
+    var first=true,t;
+    for(t=-2.5;t<=2.5;t+=0.02){
+      var x=sign*P.a*Math.cosh(t),y=P.b*Math.sinh(t);
+      var sx=mx(x),sy=my(y);
+      if(Math.abs(x)>7.2){if(!first)ct.stroke();ct.beginPath();first=true;continue;}
+      if(first){ct.moveTo(sx,sy);first=false;}else ct.lineTo(sx,sy);
+    }
+    ct.stroke();
+  };
+  ct.strokeStyle=ACC;ct.lineWidth=2.2;
+  branch(1);branch(-1);
+  ct.fillStyle=BAD;ct.beginPath();ct.arc(mx(f1x),my(0),4,0,Math.PI*2);ct.fill();ct.beginPath();ct.arc(mx(f2x),my(0),4,0,Math.PI*2);ct.fill();
+  ct.strokeStyle=BAD;ct.lineWidth=1.4;ct.setLineDash([5,4]);
+  var slope=P.b/P.a;
+  ct.beginPath();ct.moveTo(mx(-7),my(-7*slope));ct.lineTo(mx(7),my(7*slope));ct.stroke();
+  ct.beginPath();ct.moveTo(mx(-7),my(7*slope));ct.lineTo(mx(7),my(-7*slope));ct.stroke();
+  ct.setLineDash([]);
+  ct.fillStyle=BAD;ct.font='12px system-ui';ct.textAlign='center';
+  ct.fillText('بؤرة',mx(f1x),my(0)-8);ct.fillText('بؤرة',mx(f2x),my(0)-8);
+  document.getElementById('eqLabel').textContent='(x-h)²/a² − (y-k)²/b² = 1';
+  document.getElementById('infoBar').innerHTML='<b>c = √(a²+b²) =</b> '+c.toFixed(2)+' &nbsp; <b>المقاربتان:</b> y-k = ±('+P.b.toFixed(2)+'/'+P.a.toFixed(2)+')(x-h)';
+}
+draw();
+</script>
+</body>
+</html>

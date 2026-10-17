@@ -21,3 +21,7 @@ official-exams/pages/
 !official-exams/solutions/**
 !official-exams/solutions/**/*.pdf
 official-exams/year-sim/sim_out.json
+
+# ناتج تحليل التبعيات (كبير، غير لازم للتطبيق)
+graphify-out/
+darb-update.bundle

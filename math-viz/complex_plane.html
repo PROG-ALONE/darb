@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>المستوى المركّب</title>
+<style>
+:root{--bg:#f4f1ea;--ink:#27231d;--muted:#8a8172;--acc:#2f7d5b;--soft:#efe9dd;--line:#e4ded2;--card:#fff;--bad:#c0563f;--gold:#d8a53a}
+*{box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:10px}
+.eq{text-align:center;font-size:15px;font-weight:700;color:var(--acc);margin:0 0 8px}
+canvas{display:block;margin:0 auto;border-radius:12px;background:var(--card);border:1px solid var(--line)}
+.ctrl{display:flex;justify-content:center;gap:10px;margin:8px 0;flex-wrap:wrap}
+.param{display:flex;align-items:center;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 8px}
+.param label{font-size:13px;font-weight:700;color:var(--acc);min-width:16px;text-align:center}
+.param input{width:56px;border:1px solid var(--line);border-radius:6px;padding:4px;font-size:13px;text-align:center;font-family:inherit}
+.param button{min-width:32px;min-height:32px;border:0;border-radius:6px;background:var(--soft);cursor:pointer;font-size:14px;font-family:inherit;line-height:1}
+.info{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:8px;padding:0 8px}
+.info b{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="eq" id="eqLabel">z = a + bi</div>
+<canvas id="cv" width="330" height="270"></canvas>
+<div class="ctrl">
+  <div class="param"><label>a</label><input id="ia" value="3"><button class="up">▲</button><button class="dn">▼</button></div>
+  <div class="param"><label>b</label><input id="ib" value="2"><button class="up">▲</button><button class="dn">▼</button></div>
+</div>
+<div class="info" id="infoBar"></div>
+<script>
+const INK='#27231d',MUTED='#8a8172',ACC='#2f7d5b',BAD='#c0563f',GOLD='#d8a53a',LINE='#e4ded2',CARD='#fff';
+const P={a:3,b:2,s:0.5};
+const cv=document.getElementById('cv'),ct=cv.getContext('2d');
+const W=cv.width,H=cv.height;
+const px=function(v){return Math.round(v*100)/100;};
+function adj(k,d){P[k]=px(P[k]+d);sync();draw();}
+function sync(){document.getElementById('ia').value=P.a;document.getElementById('ib').value=P.b;}
+document.querySelectorAll('.param').forEach(function(p){
+  var k=p.querySelector('label').textContent,inp=p.querySelector('input'),bs=p.querySelectorAll('button');
+  bs[0].onclick=function(){adj(k,P.s);};
+  bs[1].onclick=function(){adj(k,-P.s);};
+  inp.onchange=function(){var v=parseFloat(inp.value);if(!isNaN(v)){P[k]=px(v);sync();draw();}};
+});
+function mx(x){return W/2+x*((W-60)/12);}
+function my(y){return H/2-y*((H-60)/12);}
+function draw(){
+  ct.clearRect(0,0,W,H);
+  ct.strokeStyle=INK;ct.lineWidth=1.4;
+  ct.beginPath();ct.moveTo(mx(-6),my(0));ct.lineTo(mx(6),my(0));ct.stroke();
+  ct.beginPath();ct.moveTo(mx(0),my(-6));ct.lineTo(mx(0),my(6));ct.stroke();
+  ct.fillStyle=INK;ct.font='12px system-ui';ct.textAlign='end';ct.fillText('Re',W-8,my(0)-6);
+  ct.textAlign='start';ct.fillText('Im',28,30);
+  var r=Math.sqrt(P.a*P.a+P.b*P.b);
+  var theta=Math.atan2(P.b,P.a);
+  var deg=(theta*180/Math.PI).toFixed(1);
+  // component lines dashed
+  ct.strokeStyle=BAD;ct.lineWidth=1.4;ct.setLineDash([5,4]);
+  ct.beginPath();ct.moveTo(mx(0),my(0));ct.lineTo(mx(P.a),my(0));ct.stroke();
+  ct.beginPath();ct.moveTo(mx(P.a),my(0));ct.lineTo(mx(P.a),my(P.b));ct.stroke();
+  ct.setLineDash([]);
+  // vector z
+  ct.strokeStyle=ACC;ct.lineWidth=2.2;ct.beginPath();ct.moveTo(mx(0),my(0));ct.lineTo(mx(P.a),my(P.b));ct.stroke();
+  // arrow head
+  var ang=theta;var L=8;
+  ct.fillStyle=ACC;ct.beginPath();
+  ct.moveTo(mx(P.a),my(P.b));
+  ct.lineTo(mx(P.a)-Math.cos(ang-0.4)*L,my(P.b)-Math.sin(ang-0.4)*L);
+  ct.lineTo(mx(P.a)-Math.cos(ang+0.4)*L,my(P.b)-Math.sin(ang+0.4)*L);
+  ct.fill();
+  // point z
+  ct.fillStyle=BAD;ct.beginPath();ct.arc(mx(P.a),my(P.b),4,0,Math.PI*2);ct.fill();
+  // angle arc theta
+  ct.strokeStyle=GOLD;ct.lineWidth=1.6;
+  ct.beginPath();ct.arc(mx(0),my(0),20,0,theta);ct.stroke();
+  ct.fillStyle=GOLD;ct.font='14px system-ui';ct.fillText('θ',mx(14),my(14));
+  // labels
+  ct.fillStyle=INK;ct.font='12px system-ui';ct.textAlign='center';
+  ct.fillText('a = '+P.a,mx(P.a/2),my(-2));
+  ct.textAlign='start';ct.fillText('bi = '+P.b+'i',mx(P.a)+4,my(P.b/2));
+  ct.fillText('z = '+P.a+'+'+P.b+'i',mx(P.a)+8,my(P.b)+14);
+  var abs=r.toFixed(2);
+  document.getElementById('eqLabel').textContent='z = '+P.a+'+'+P.b+'i';
+  document.getElementById('infoBar').innerHTML='<b>|z| =</b> '+abs+' &nbsp; <b>arg(z) =</b> '+deg+'° &nbsp; <b>(radyان):</b> '+theta.toFixed(2);
+}
+draw();
+</script>
+</body>
+</html>
